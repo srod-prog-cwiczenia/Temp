@@ -26,4 +26,23 @@ Put $S = J \cup \lbrace x_0-\etha, x_0+\etha\rbrace$.
 Then $S\in\Seg$ and there is no $S_1\in\Seg$, $S_1 \subseteq S$
 disjoint from $A$.
 
+$b\colon \N\to \rationals$
+Let us define:
+	$\calF = \{b^{-1}[S]\colon S \in \Seg\}$.
+We check that 	
+$S^0(\calF) = \NULL$.
+Let $A\in \NULL$ and choose $S \in \Seg$.
+Then there exists $S_1\subseteq S$, $S_1\in \Seg$
+such that $\cl(b[A]) \cap S_1 = \emptyset$.
+Then $A \cap b^{-1}[S_1] = \emptyset$, which
+proves that $A\in S^0(\calF)$.
 
+On the other hand, let $A\in S^0(\calF)$ and
+choose $S\in\Seg$. Then there exists $S_1 \subseteq S$
+$S_1\in\Seg$ such that $A\cap b^{-1}[S_1] = \emptyset$.
+Hence $b[A] \cap S_1 = emptyset$ and moreover there
+exists $S_2\in\Seg$ such that $S_2 \subseteq \int(S_1)$.
+Thus $\cl(b[A])\cap \int(S_1) = \emptyset$
+so $\cl(b[A])\cap S_2 = \emptyset$, which
+proves that $\cl(b[A])\in\negligible$, so $A\in\NULL$.
+	
