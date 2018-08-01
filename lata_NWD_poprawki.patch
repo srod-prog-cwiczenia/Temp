@@ -1,0 +1,22 @@
+diff --git a/NWD.tex b/NWD.tex
+index 2f7a49a..a363560 100644
+--- a/NWD.tex
++++ b/NWD.tex
+@@ -43,7 +43,7 @@
+ \newcommand{\INULL}{\I_\mathrm{NULL}}			  
+ \newcommand{\cl}{\mathrm{cl}}
+ \newcommand{\interior}{\mathrm{int}}
+-
++\newcommand{\arithseq}[2]{\{#1n + #2\}}
+ 
+ \title[Ideals of nowhere dense sets in some topologies on positive integers]{Ideals of nowhere dense sets in some topologies on positive integers}
+ 
+@@ -64,7 +64,7 @@ We investigate the ideals of nowhere dense sets in three topologies on $\N$ (nam
+ 
+ \section{Introduction}
+ 
+-Let $\N$ denote the set of positive integers and $\N_0$ -- the set of non-negative integers. For all $a,b\in\N$ the symbol $\{an+b\}$ stands for the infinite arithmetic progression with the initial term $b$ and the difference $a$:
++Let $\N$ denote the set of positive integers and $\N_0$ -- the set of non-negative integers. For all $a,b\in\N$ the symbol $\arithseq{a}{b}$ stands for the infinite arithmetic progression with the initial term $b$ and the difference $a$:
+ $$\{an+b\} = \{an+b :\ n\in\N_0\} = \{b,\ b+a,\ b+2a,\ \ldots\}. $$
+ We use the symbol $(a,b)$ to denote the greatest common divisor of $a$ and $b$. 
+ The letter $\mathbb{P}$ symbolizes the set of all prime numbers and $\Theta(a)$ stands for the set of all prime factors of $a\in\N$.
