@@ -1,22 +1,15 @@
 diff --git a/NWD.tex b/NWD.tex
-index 2f7a49a..a363560 100644
+index 2d29e55..9fd0ef1 100644
 --- a/NWD.tex
 +++ b/NWD.tex
-@@ -43,7 +43,7 @@
- \newcommand{\INULL}{\I_\mathrm{NULL}}			  
- \newcommand{\cl}{\mathrm{cl}}
- \newcommand{\interior}{\mathrm{int}}
--
-+\newcommand{\arithseq}[2]{\{#1n + #2\}}
+@@ -79,6 +79,10 @@ Let $\InfSubs$ denote the family of all infinite subsets of $\N$.
  
- \title[Ideals of nowhere dense sets in some topologies on positive integers]{Ideals of nowhere dense sets in some topologies on positive integers}
+ By treating the power set $\mathcal{P}(\N)$ as the space $2^\N$ of all functions $f\colon\N\to 2$ (equipped with the product topology, where each space $2= \left\{0,1\right\}$ carries the discrete topology) and identifying subsets of $\N$ with their characteristic functions, we can talk about descriptive complexity of subsets of $\mathcal{P}(\N)$.
  
-@@ -64,7 +64,7 @@ We investigate the ideals of nowhere dense sets in three topologies on $\N$ (nam
++For any partition $\{X_n\}_{n\in\N}$ of $\N$ a set $S\subseteq\N$
++is called a selector of the partition $\{X_n\}_{n\in\N}$ iff
++$\forall_{n\in\N} |X_n \cap S| = 1$. 
++
+ For other basic notions concerning set theory and topology see, e.g., \cite{Kechris}.
  
- \section{Introduction}
  
--Let $\N$ denote the set of positive integers and $\N_0$ -- the set of non-negative integers. For all $a,b\in\N$ the symbol $\{an+b\}$ stands for the infinite arithmetic progression with the initial term $b$ and the difference $a$:
-+Let $\N$ denote the set of positive integers and $\N_0$ -- the set of non-negative integers. For all $a,b\in\N$ the symbol $\arithseq{a}{b}$ stands for the infinite arithmetic progression with the initial term $b$ and the difference $a$:
- $$\{an+b\} = \{an+b :\ n\in\N_0\} = \{b,\ b+a,\ b+2a,\ \ldots\}. $$
- We use the symbol $(a,b)$ to denote the greatest common divisor of $a$ and $b$. 
- The letter $\mathbb{P}$ symbolizes the set of all prime numbers and $\Theta(a)$ stands for the set of all prime factors of $a\in\N$.
