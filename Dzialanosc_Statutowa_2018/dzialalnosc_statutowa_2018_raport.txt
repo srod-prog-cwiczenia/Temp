@@ -1,0 +1,36 @@
+Zadania badawcze Instytut Matematyki – raport za rok 2018: 
+
+     Wykorzystanie uzyskanych wyników 
+     
+ 0. Zakład Teorii Mnogości
+
+ 1. Opis zadania:
+
+  Borelowskie struktury. Permutowanie szeregów. Ideały zbiorów nigdziegęstych w topologiach Furstenberga, Golomba oraz Kircha. Zbadanie ich podstawowych własności relacji z klasycznymi ideałami na zbiorze liczb naturalnych. Badanie topologicznych własności zbiorów atraktorów systemów funkcji iterowanych.
+
+ 2. Informacja o upowszechnianiu i popularyzacji wyników działalności  jednostki
+naukowej:
+     a) liczba opublikowanych prac w roku 2018 - trzy prace 
+     b) liczba monografii - brak
+     c) liczba publikacji w bazie JCR 
+     d) liczba publikacji w bazie Scopus
+     e) liczba innych
+         * plus wykaz publikacji/ monografii - wykaz musi być zgodny z bazą 
+expertus. Dostęp do baz JCR oraz Scopus jest możliwy pod adresem 
+Biblioteki  UG: http://www.bg.ug.edu.pl/e-zasoby/bazy-danych
+
+ 3. Badania naukowe lub prace rozwojowe - rozwój młodych naukowców** - limit  200
+słów
+     a) nazwa zadania
+     b) cel
+     c) opis realizowanych prac
+
+ **BW młodych w IM UG w 2018 r.:
+     - dr Adam Dzedzej
+     - mgr Marcin Dembowski
+     - mgr Maciej Stankiewicz 
+
+
+
+
+
