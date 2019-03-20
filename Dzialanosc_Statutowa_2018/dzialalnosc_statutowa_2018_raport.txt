@@ -13,7 +13,7 @@ naukowej:
      a) liczba opublikowanych prac w roku 2018 - trzy prace 
      b) liczba monografii - brak
      c) liczba publikacji w bazie JCR 
-     d) liczba publikacji w bazie Scopus
+     d) liczba publikacji w bazie Scopus 3 (w roku 2018)
      e) liczba innych
          * plus wykaz publikacji/ monografii - wykaz musi być zgodny z bazą 
 expertus. Dostęp do baz JCR oraz Scopus jest możliwy pod adresem 
@@ -26,9 +26,6 @@ słów
      c) opis realizowanych prac
 
  **BW młodych w IM UG w 2018 r.:
-     - dr Adam Dzedzej
-     - mgr Marcin Dembowski
-     - mgr Maciej Stankiewicz 
 
 
 

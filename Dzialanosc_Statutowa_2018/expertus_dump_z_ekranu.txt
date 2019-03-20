@@ -1,0 +1,82 @@
+Nr opisu: 0000061455
+AUTORZY: Marta Kwela, Andrzej Nowik.
+TYTUŁ: Ideals of nowhere dense sets in some topologies on positive integers
+ŹRÓDŁO: Topology and its Applications. - 2018, Vol. 248, s. 149-163
+p-ISSN: 0166-8641
+e-ISSN: 1879-3207
+UWAGI: Bibliogr. 26 poz.
+Typ publikacji: ZAC
+Język publikacji: ENG
+Wskaźnik Impact Factor ISI: 0.549
+Punktacja MNiSW: 20.000
+5-letni Impact Factor ISI: 0.579
+Słowa kluczowe w j. ang.:
+ideals
+Furstenberg's topology
+Golomb's topology
+Kirch's topology
+Marczewski-Burstin representability
+
+Inne bazy podające opis:
+Web of Science
+Scopus
+
+Adres url: https://doi.org/10.1016/j.topol.2018.08.015
+DOI: 10.1016/j.topol.2018.08.015
+2/3
+ 
+Nr opisu: 0000061461
+AUTORZY: Andrzej Nowik.
+TYTUŁ: On the family of functions with closure of graphs in the Mendez ideals
+ŹRÓDŁO: Mathematica Slovaca. - 2018, Vol. 68, no. 2, s. 245-252
+p-ISSN: 0139-9918
+e-ISSN: 1337-2211
+UWAGI: Bibliogr. 9 poz.
+Typ publikacji: ZAC
+Język publikacji: ENG
+Wskaźnik Impact Factor ISI: 0.314
+Punktacja MNiSW: 20.000
+5-letni Impact Factor ISI: 0.462
+Liczba arkuszy: 15
+Słowa kluczowe w j. ang.:
+functions with measure zero closure
+functions with meager closure
+Mendez ideals
+
+Inne bazy podające opis:
+Web of Science
+Scopus
+
+DOI: 10.1515/ms-2017-0097
+3/3
+ 
+Nr opisu: 0000061462
+AUTORZY: Edward Grzegorek, Iwo Labuda.
+TYTUŁ: On two theorems of Sierpiński
+ŹRÓDŁO: Archiv der Mathematik. - 2018, Vol. 110, iss. 6, s. 637-644
+p-ISSN: 0003-889X
+e-ISSN: 1420-8938
+UWAGI: Bibliogr. 16 poz.
+Typ publikacji: ZAC
+Język publikacji: ENG
+Wskaźnik Impact Factor ISI: 0.590
+Punktacja MNiSW: 20.000
+5-letni Impact Factor ISI: 0.583
+Słowa kluczowe w j. ang.:
+Baire category
+Baire property
+μ-measurability
+measurable set
+completely non-measurable set
+full subset
+outer measure
+measurable envelope
+
+Inne bazy podające opis:
+Web of Science
+Scopus
+
+Adres url: https://link.springer.com/content/pdf/10.1007%2Fs00013-018-1179-8.pdf
+DOI: 10.1007/s00013-018-1179-8
+  Wyświetl ponownie stosując format:  
+Wyświetl/ukryj etykiety | Wyświetlenie wyników w wersji do druku |  | Nowe wyszukiwanie | Biblioteka Główna Uniwersytetu Gdańskiego 
