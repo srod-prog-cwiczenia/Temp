@@ -1,15 +1,34 @@
-ZAK£AD … 
-Sprawozdanie za rok 2019
+Zak³ad teorii mnogoœci:
+Sprawozdanie za rok 2019:
 
-    I. Tematyka badawcza:
-    II. Opis wyników:
-    III. Prowadzenie lub udzia³ w seminariach:
-    IV. Prace opublikowane w roku sprawozdawczym (punktacja na liœcie MNiSzW): 
-    V. Prace zaakceptowane do publikacji w roku sprawozdawczym 
-    VI. Nagrody, medale i wyró¿nienia otrzymane w roku sprawozdawczym:
-    VII. Udzia³ w konferencjach naukowych:
-    VIII. Wspó³praca z innymi oœrodkami naukowymi:
-    IX. Granty BW, NCN lub inne (numery, kierownicy), stypendia i sta¿e naukowe:
-    X. Wykonane recenzje oraz liczba cytowañ:
-    XI. Dzia³alnoœæ organizacyjna w obszarze nauki: promocja doktoratów, udzia³ w komisjach doktorskich i habilitacyjnych, organizacja konferencji, cz³onkostwo w komitetach naukowych oraz komitetach krajowych i zagranicznych czasopism naukowych, cz³onkostwo w miêdzynarodowych lub krajowych stowarzyszeniach naukowych, dzia³alnoœæ popularyzacyjna:
+I. Tematyka badawcza:
+*  Permutowanie szeregów (Pawe³ Klinga, Andrzej Nowik)
+*  Permutacje i odwzorowania osiowe macierzy nieskoñczonych (Pawe³ Klinga, Andrzej Nowik)
+*  Addytywne w³asnoœci podzbiorów prostej rzeczywistej (Andrzej Nowik)
+*  Borelowskie struktury (Edward Grzegorek)
+*  Badanie w³asnoœci idea³ów zbiorów nigdziegêstych w topologiach
+   Furstenberga, Golomba i Kircha (Marta Kwela, Andrzej Nowik).
+*  Badanie topologicznych w³asnoœci zbiorów atraktorów systemów funkcji iterowanych (Pawe³ Klinga)
+
+II. Opis wyników:
+
+III. Prowadzenie lub udzia³ w seminariach:
+
+IV. Prace opublikowane w roku sprawozdawczym (punktacja na liœcie MNiSzW): 
+
+V. Prace zaakceptowane do publikacji w roku sprawozdawczym 
+
+VI. Nagrody, medale i wyró¿nienia otrzymane w roku sprawozdawczym:
+
+VII. Udzia³ w konferencjach naukowych:
+
+VIII. Wspó³praca z innymi oœrodkami naukowymi:
+  Wspó³praca z Katedr¹ Analizy Funkcjonalnej i Topologii
+  Instytutu Matematyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy.
+  
+IX. Granty BW, NCN lub inne (numery, kierownicy), stypendia i sta¿e naukowe:
+
+X. Wykonane recenzje oraz liczba cytowañ:
+
+XI. Dzia³alnoœæ organizacyjna w obszarze nauki: promocja doktoratów, udzia³ w komisjach doktorskich i habilitacyjnych, organizacja konferencji, cz³onkostwo w komitetach naukowych oraz komitetach krajowych i zagranicznych czasopism naukowych, cz³onkostwo w miêdzynarodowych lub krajowych stowarzyszeniach naukowych, dzia³alnoœæ popularyzacyjna:
 
