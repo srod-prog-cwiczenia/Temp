@@ -13,9 +13,18 @@ I. Tematyka badawcza:
 II. Opis wyników:
 
 III. Prowadzenie lub udzia³ w seminariach:
+* Andrzej Nowik, Referat (odczyt seminaryjny) ,,Idea³y Zbiorów nigdziegêstych 
+w topologiach na liczbach ca³kowitych'', Bydgoszcz, 20 lutego 2019.
+* Andrzej Nowik, Referat (odczyt seminaryjny) ,,Idea³y Zbiorów nigdziegêstych w
+topologiach na liczbach ca³kowitych", Gdañsk, 26 lutego 2019
+* Andrzej Nowik, Referat (odczyt seminaryjny) ,,Idea³y Zbiorów nigdziegêstych w
+topologiach na liczbach ca³kowitych - kontynuacja", 3 marca 2019.
 
 IV. Prace opublikowane w roku sprawozdawczym (punktacja na liœcie MNiSzW): 
-
+   Klinga, Pawe³; Kwela, Adam; Staniszewski, Marcin
+   "Size of the set of attractors for iterated function systems."
+   Chaos Solitons Fractals 128 (2019), 104–107. 28A78 (26A18 28A80)
+   
 V. Prace zaakceptowane do publikacji w roku sprawozdawczym 
 
 VI. Nagrody, medale i wyró¿nienia otrzymane w roku sprawozdawczym:
@@ -32,3 +41,4 @@ X. Wykonane recenzje oraz liczba cytowañ:
 
 XI. Dzia³alnoœæ organizacyjna w obszarze nauki: promocja doktoratów, udzia³ w komisjach doktorskich i habilitacyjnych, organizacja konferencji, cz³onkostwo w komitetach naukowych oraz komitetach krajowych i zagranicznych czasopism naukowych, cz³onkostwo w miêdzynarodowych lub krajowych stowarzyszeniach naukowych, dzia³alnoœæ popularyzacyjna:
 
+*  Marta Frankowska i Andrzej Nowik s¹ cz³onkami Komitetu Okrêgowego Olimpiady Matematycznej.
