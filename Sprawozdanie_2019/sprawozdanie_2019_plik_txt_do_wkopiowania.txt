@@ -12,6 +12,20 @@ I. Tematyka badawcza:
 
 II. Opis wyników:
 
+* Zbiór s³abych atraktorów systemu funkcji iterowanych (zwê¿aj¹cych) 
+jest zbiorem sigma-porowatym w przestrzeni potêgowej (z topologi¹ Vietorisa) (P.Klinga).
+
+* Wspólne uogólnienie i wzmocnienie dwóch ró¿nych twierdzeñ Sierpiñskiego o rozbiciach podzbiorów 
+prostej rzeczywistej (E.Grzegorek)
+
+* Ustalono i sformu³owano wiele topologicznych w³asnoœci idea³ów 
+Furstenberga, Golomba i Kircha (oraz relacji miêdzy nimi i znanymi wczeœniej idea³ami).
+(Marta Kwela)
+
+* Badanie w³asnoœci idea³ów sumowalnych (np: zbiór uniweralny dla idea³ów sumowalnych
+jest zbiorem sigma-porowatym w odpowiedniej produktowej topologii)
+(Andrzej Nowik, Pawe³ Klinga) 
+
 III. Prowadzenie lub udzia³ w seminariach:
 * Andrzej Nowik, Referat (odczyt seminaryjny) ,,Idea³y Zbiorów nigdziegêstych 
 w topologiach na liczbach ca³kowitych'', Bydgoszcz, 20 lutego 2019.
@@ -41,4 +55,7 @@ X. Wykonane recenzje oraz liczba cytowañ:
 
 XI. Dzia³alnoœæ organizacyjna w obszarze nauki: promocja doktoratów, udzia³ w komisjach doktorskich i habilitacyjnych, organizacja konferencji, cz³onkostwo w komitetach naukowych oraz komitetach krajowych i zagranicznych czasopism naukowych, cz³onkostwo w miêdzynarodowych lub krajowych stowarzyszeniach naukowych, dzia³alnoœæ popularyzacyjna:
 
+*  Pawe³ Klinga - udzia³ w Pomorskich Warsztatach Naukowych,
+   warsztaty: ,,Zadania przewozowe'' 9-13 wrzeœnia 2019.
+   
 *  Marta Frankowska i Andrzej Nowik s¹ cz³onkami Komitetu Okrêgowego Olimpiady Matematycznej.
