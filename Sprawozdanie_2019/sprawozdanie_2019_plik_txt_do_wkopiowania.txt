@@ -1,14 +1,17 @@
-Zak³ad teorii mnogoœci:
+Zak³ad teorii mnogo¶ci:
 Sprawozdanie za rok 2019:
 
 I. Tematyka badawcza:
 *  Permutowanie szeregów (Pawe³ Klinga, Andrzej Nowik)
 *  Permutacje i odwzorowania osiowe macierzy nieskoñczonych (Pawe³ Klinga, Andrzej Nowik)
-*  Addytywne w³asnoœci podzbiorów prostej rzeczywistej (Andrzej Nowik)
+*  Addytywne w³asno¶ci podzbiorów prostej rzeczywistej (Andrzej Nowik)
 *  Borelowskie struktury (Edward Grzegorek)
-*  Badanie w³asnoœci idea³ów zbiorów nigdziegêstych w topologiach
+*  Badanie w³asno¶ci idea³ów zbiorów nigdziegêstych w topologiach
    Furstenberga, Golomba i Kircha (Marta Kwela, Andrzej Nowik).
-*  Badanie topologicznych w³asnoœci zbiorów atraktorów systemów funkcji iterowanych (Pawe³ Klinga)
+*  Badanie topologicznych w³asnoci zbiorów atraktorów systemów funkcji iterowanych (Pawe³ Klinga)
+*  Opisanie z³o¿oono¶ci borelowskiej rodziny atraktorów generowanych
+   przez s³abe kontrakcje (Pawe³ Klinga)
+*  Zweryfikowanie ró¿nych typów porowato¶ci rodziny atraktorów.
 
 II. Opis wyników:
 
@@ -18,11 +21,11 @@ jest zbiorem sigma-porowatym w przestrzeni potêgowej (z topologi¹ Vietorisa) (P.
 * Wspólne uogólnienie i wzmocnienie dwóch ró¿nych twierdzeñ Sierpiñskiego o rozbiciach podzbiorów 
 prostej rzeczywistej (E.Grzegorek)
 
-* Ustalono i sformu³owano wiele topologicznych w³asnoœci idea³ów 
-Furstenberga, Golomba i Kircha (oraz relacji miêdzy nimi i znanymi wczeœniej idea³ami).
+* Ustalono i sformu³owano wiele topologicznych w³asno¶ci idea³ów 
+Furstenberga, Golomba i Kircha (oraz relacji miêdzy nimi i znanymi wcze¶niej idea³ami).
 (Marta Kwela)
 
-* Badanie w³asnoœci idea³ów sumowalnych (np: zbiór uniweralny dla idea³ów sumowalnych
+* Badanie w³asno¶ci idea³ów sumowalnych (np: zbiór uniweralny dla idea³ów sumowalnych
 jest zbiorem sigma-porowatym w odpowiedniej produktowej topologii)
 (Andrzej Nowik, Pawe³ Klinga) 
 
@@ -34,18 +37,22 @@ topologiach na liczbach ca³kowitych", Gdañsk, 26 lutego 2019
 * Andrzej Nowik, Referat (odczyt seminaryjny) ,,Idea³y Zbiorów nigdziegêstych w
 topologiach na liczbach ca³kowitych - kontynuacja", 3 marca 2019.
 
-IV. Prace opublikowane w roku sprawozdawczym (punktacja na liœcie MNiSzW): 
+IV. Prace opublikowane w roku sprawozdawczym (punktacja na li¶cie MNiSzW): 
    Klinga, Pawe³; Kwela, Adam; Staniszewski, Marcin
    "Size of the set of attractors for iterated function systems."
-   Chaos Solitons Fractals 128 (2019), 104–107. 28A78 (26A18 28A80)
+   Chaos Solitons Fractals 128 (2019), 104--107. 
    
+   Grzegorek E., Labuda I. "Partitions into thin sets and
+   forgotten theorems of Kunugi and Luzin-Novikow",
+   Colloquium Mathematicum, 155/2 (2019), 267--285.
+
 V. Prace zaakceptowane do publikacji w roku sprawozdawczym 
 
 VI. Nagrody, medale i wyró¿nienia otrzymane w roku sprawozdawczym:
 
 VII. Udzia³ w konferencjach naukowych:
 
-VIII. Wspó³praca z innymi oœrodkami naukowymi:
+VIII. Wspó³praca z innymi o¶rodkami naukowymi:
   Wspó³praca z Katedr¹ Analizy Funkcjonalnej i Topologii
   Instytutu Matematyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy.
   
@@ -53,9 +60,9 @@ IX. Granty BW, NCN lub inne (numery, kierownicy), stypendia i sta¿e naukowe:
 
 X. Wykonane recenzje oraz liczba cytowañ:
 
-XI. Dzia³alnoœæ organizacyjna w obszarze nauki: promocja doktoratów, udzia³ w komisjach doktorskich i habilitacyjnych, organizacja konferencji, cz³onkostwo w komitetach naukowych oraz komitetach krajowych i zagranicznych czasopism naukowych, cz³onkostwo w miêdzynarodowych lub krajowych stowarzyszeniach naukowych, dzia³alnoœæ popularyzacyjna:
+XI. Dzia³alno¶æ organizacyjna w obszarze nauki: promocja doktoratów, udzia³ w komisjach doktorskich i habilitacyjnych, organizacja konferencji, cz³onkostwo w komitetach naukowych oraz komitetach krajowych i zagranicznych czasopism naukowych, cz³onkostwo w miêdzynarodowych lub krajowych stowarzyszeniach naukowych, dzia³alno¶æ popularyzacyjna:
 
 *  Pawe³ Klinga - udzia³ w Pomorskich Warsztatach Naukowych,
-   warsztaty: ,,Zadania przewozowe'' 9-13 wrzeœnia 2019.
+   warsztaty: ,,Zadania przewozowe'' 9-13 wrze¶nia 2019.
    
-*  Marta Frankowska i Andrzej Nowik s¹ cz³onkami Komitetu Okrêgowego Olimpiady Matematycznej.
+*  Marta Frankowska i Andrzej Nowik s± cz³onkami Komitetu Okrêgowego Olimpiady Matematycznej.
