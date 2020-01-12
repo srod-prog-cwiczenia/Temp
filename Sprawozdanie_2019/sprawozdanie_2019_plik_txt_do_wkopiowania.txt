@@ -22,10 +22,11 @@ jest zbiorem sigma-porowatym w przestrzeni potêgowej (z topologi¹ Vietorisa) (P.
 prostej rzeczywistej (E.Grzegorek)
 
 * Ustalono i sformu³owano wiele topologicznych w³asno¶ci idea³ów 
-Furstenberga, Golomba i Kircha (oraz relacji miêdzy nimi i znanymi wcze¶niej idea³ami).
+Furstenberga, Golomba i Kircha (oraz relacji miêdzy nimi i znanymi wcze¶niej idea³ami
+jak idea³ Hindmana, idea³ harmoniczny, itd.).
 (Marta Kwela)
 
-* Badanie w³asno¶ci idea³ów sumowalnych (np: zbiór uniweralny dla idea³ów sumowalnych
+* Udowodnienie pewnych w³asno¶ci idea³ów sumowalnych (np: zbiór uniweralny dla idea³ów sumowalnych
 jest zbiorem sigma-porowatym w odpowiedniej produktowej topologii)
 (Andrzej Nowik, Pawe³ Klinga) 
 
@@ -40,11 +41,11 @@ topologiach na liczbach ca³kowitych - kontynuacja", 3 marca 2019.
 IV. Prace opublikowane w roku sprawozdawczym (punktacja na li¶cie MNiSzW): 
    Klinga, Pawe³; Kwela, Adam; Staniszewski, Marcin
    "Size of the set of attractors for iterated function systems."
-   Chaos Solitons Fractals 128 (2019), 104--107. 
+   Chaos Solitons Fractals 128 (2019), 104--107. (punktacja MNiSzW: 70).
    
    Grzegorek E., Labuda I. "Partitions into thin sets and
    forgotten theorems of Kunugi and Luzin-Novikow",
-   Colloquium Mathematicum, 155/2 (2019), 267--285.
+   Colloquium Mathematicum, 155/2 (2019), 267--285. (punktacja MNiSzW: 70).
 
 V. Prace zaakceptowane do publikacji w roku sprawozdawczym 
 
