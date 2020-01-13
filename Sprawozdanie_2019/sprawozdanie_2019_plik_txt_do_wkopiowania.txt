@@ -15,8 +15,8 @@ I. Tematyka badawcza:
 
 II. Opis wyników:
 
-* Zbiór s³abych atraktorów systemu funkcji iterowanych (zwê¿aj¹cych) 
-jest zbiorem sigma-porowatym w przestrzeni potêgowej (z topologi¹ Vietorisa) (P.Klinga).
+* Zbiór s³abych atraktorów systemu funkcji iterowanych (zwê¿aj±cych) 
+jest zbiorem sigma-porowatym w przestrzeni potêgowej (rozwa¿anej z topologi± Vietorisa) (P.Klinga).
 
 * Wspólne uogólnienie i wzmocnienie dwóch ró¿nych twierdzeñ Sierpiñskiego o rozbiciach podzbiorów 
 prostej rzeczywistej (E.Grzegorek)
@@ -54,7 +54,7 @@ VI. Nagrody, medale i wyró¿nienia otrzymane w roku sprawozdawczym:
 VII. Udzia³ w konferencjach naukowych:
 
 VIII. Wspó³praca z innymi o¶rodkami naukowymi:
-  Wspó³praca z Katedr¹ Analizy Funkcjonalnej i Topologii
+  Wspó³praca z Katedr± Analizy Funkcjonalnej i Topologii
   Instytutu Matematyki Uniwersytetu Kazimierza Wielkiego w Bydgoszczy.
   
 IX. Granty BW, NCN lub inne (numery, kierownicy), stypendia i sta¿e naukowe:
