@@ -237,29 +237,28 @@
 \put(20,30){$\mathit{F}$}
 \put(59,57){$\mathit{H}$}
 \put(100,57){$\mathcal{I}_d$}
-\put(80,10){$\mathit{Fin}$}
-\put(140,30){$\mathit{W}$}
+\put(77,9){$\mathit{Fin}$}
+\put(138,33){$\mathit{W}$}
 \put(53,33){$\mathit{Diff}$}
-\put(74,33){$\mathit{MonLac}$}
+\put(74,31){$\mathit{MonLac}$}
 \put(76,45){$\mathit{Lac}$}
 \put(104,33){$\mathcal{I}_{\frac{1}{n}}$}
-\put(100,73){$\mathit{nPS}$}
+\put(100,71){$\mathit{nPS}$}
 
 \put(80,13){\vector(-3,1){55}}% Fin->F
 \put(80,13){\vector(-4,3){23}}% Fin->Diff
+\put(80,13){\vector(4,3){23}}% Fin->I_{1/n}
+\put(80,13){\vector(3,1){56}} %Fin->W
 \put(24,32){\vector(3,2){35}}%% F -> H
 \put(80,13){\vector(0,1){16}}% Fin->MonLac
 \put(80,35){\vector(0,1){10}}% MonLac->Lac
 \put(59,39){\vector(0,1){16}}% Diff->H	
 \put(104,39){\vector(0,1){16}}% I_{1/n} -> I_{d}
-\put(81,48){\vector(3,2){15}}%% Lac -> I_{d}
+\put(83,48){\vector(3,2){15}}%% Lac -> I_{d}
 \put(79,48){\vector(-3,2){15}}%% Lac -> H
 
-\put(141,35){\vector(-1,1){36}}% W -> nPS
-
-\put(80,13){\vector(4,3){23}}% Fin->I_{1/n}
-\put(140,32){\vector(-3,2){35}} % W -> I_d
-\put(87,13){\vector(3,1){52}} %Fin->W
+\put(138,37){\vector(-1,1){32}}% W -> nPS
+\put(137,35){\vector(-3,2){32}} % W -> I_d
 
 \put(81,50){\vector(1,1){20}}%% Lac -> nPS
 
@@ -270,8 +269,16 @@
 \end{figure}
 
 \begin{tabbing}
-$\mathit{F}$ - \= ideał Folkmana\\
-$\mathit{W}$ - \= ideał Van der Vaerdena\\
+$\mathcal{I}_{\frac{1}{n}} = \lbrace A \subseteq \nnatural\colon
+\sum_{n\in A} \frac{1}{n} < \infty\rbrace$\\
+$\mathit{F}$ - \= ideał Folkmana:\\
+{\bf Wyjaśnienie:} jest to rodzina zbiorów które nie są ip-rich: zbiór $A\subseteq\nnatural$
+jest ip-rich \\gdy zawiera 
+wszystkie skończone (i niepuste) sumy 
+elementów zbiorów skończonych\\ o dowolnie dużym rozmiarze.
+Folkman-Rado-Sanders de facto \\ wykazali że rodzina zbiorów nie ip-rich 
+tworzy ideał.\\
+$\mathit{W}$ - \= ideał Van der Waerdena\\
 $\mathit{H}$ - \= ideał Hindmana\\
 $\mathit{Diff}$ - \= ideał Diff (co to jest?)\\
 $\mathit{MonLac}$ - \= ideał Monotonic Lacunary\\
