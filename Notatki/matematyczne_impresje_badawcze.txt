@@ -1,0 +1,101 @@
+===== Amalgamaty ideałów F_sigma ==============================
+Nie wiem czy pamiętacie ale kiedyś napisaliśmy pracę (Martha, Paweł i kreślący te słowa)
+do gdańskiego wydawnictwa gdzie m.in. było tam takie twierdzenie że dla dwóch
+ideałów sumowalnych ${\mathcal I}_{(an)}$ i ${\mathcal I}{(b_n)}$ ich suma prosta
+jest ideałem właściwym (i wtedy jest to ideał sumowalny) wtedy i tylko wtedy gdy
+$\sum \min(a_n, bn)< \infty$. 
+
+W tym samym duchu zadałem sobie pytanie jak to jest z ideałami typu $F{\sigma}$. 
+Bo suma prosta dwóch takich ideałów albo jest też ideałem właściwym typu $F{\sigma}$ albo...
+jest $P(\omega)$. No i okazuje się że też jest dostępna taka charakteryzacja, mianowicie:
+Jeśli ideały typu $F{\sigma}$ mają odpowiednie semimiary 
+$\mu$ i $\phi$ określone na skończonych podzbiorach liczb naturalnych
+i spełniające znane powszechnie warunki, to 
+wtedy funkcja zdefiniowana wzorem:
+[
+  \Phi(a) = \min\lbrace \mu(a_1) + \phi(a_2) \colon
+  a = a_1 \cup a_2, a_1 \cap a2 = \emptyset\rbrace,
+]
+dla skończonego $a$ jest semimiarą.
+
+Wówczas $\lim{n\to\infty} \Phi({0,\ldots, n}) < \infty$
+wtedy i tylko wtedy gdy suma prosta tych dwóch ideałów
+jest ideałem właściwym. Co więcej, wtedy 
+ten ideał jest generowany przez
+ową semimiarę czyli jest on równy
+rodzinie ${A\colon \lim_{n\to\infty} \Phi({0,\ldots, n}\cap A) < \infty}$.
+Dowód nie jest trudny, aczkolwiek w jednym miejscu jest pewien haczyk.
+I pytanie - czy ktoś z Was spotkał się już z takim wynikiem?
+Jeśli nie to warto to podrążyć dalej :-). 
+
+
+===== Skończone Hindmany ========
+Byłem na bieżącym tegodniowym Seminarium Zaprzyjaźnionego Zakładu - 
+niestety odbywało się ono zdalnie i niestety co gorsza w języku
+angielskim - snadź złe obyczaje rozprzestrzeniają się niczym pożoga.
+  No ale ad rem - dowiedziałem się że w obfitej menażerii ideałów pojawiły się
+nowe, interesujące okazy. Mianowicie są to ideały $Hindman_k$, czyli 
+- jak je nazywają kolokwialnie nasi koledzy (tak, tak, bo oni już
+je teraz intensywnie badają) ,,skończone Hindmany" :-).
+  Oto garść (a w zasadzie to ledwie garsteczka) odpowiednich definicji:
+
+$FS_k(B) = \lbrace \sum_{n\in F} \colon |F| = k\rbrace$.
+
+Czyli jest to dokładnie definicja $FS$, znana z klasycznego ,,Hindmana''
+tyle że zakładamy że rozważamy tylko sumy dokładnie $k$ elementów.
+  A dalej to już definiujemy zupełnie analogicznie:
+  
+$Hindman_k$ to rodzina tych $A$ dla których nie istnieje nieskończony
+$B$ taki że $FS_k(B) \subseteq A$.
+Okazuje się że łatwo można dowieść że tak zdefiniowany $H_k$  
+jest istotnie ideałem - piszę ,,łatwo'', bo o ile zrozumiałem
+dowód, to nie korzysta on jak klasyczny dowód o ,,Hindmanie'' z
+(dość trudnego, póki co) twierdzenia Hindmana, 
+a właściwie - by być precyzyjnym, nawet z pewnego jego obostrzenia,
+lecz ze ,,zwykłego'' twierdzenia Ramseya (sic!). 
+  
+  Cóż - niestety, ideały $H_k$ są zawarte w $H$, więc
+  dla naszych celów - badania ,,ideału Rzymskiego'' nie
+  są ,,atrakcyjne'' :-) bo umieszczone są ,,wyżej'' na Diagramie Krzyśka.
+  Jakoż że pomimo rzeczone ideały $H_k$ ,,grzeszą'' wczesną młodością
+  i dopiero co niedawno ujrzały oblicze Słońca i nasz świat, to
+  sporo o nich już wiadomo - duża tu zasługa Młodych Lwów, jak się domyślam...
+  Ale, ale - gdzie moje maniery? Wszak powinienem od tego zacząć - od podania
+  linka do pracy gdzie się one pojawiły. Oto więc i wspomniany link:
+  https://arxiv.org/pdf/2310.07693
+  
+  
+====== Zbiory prawie cienkie ============
+  Nazwałem ów warunek (KKJT) od akronimu Waszych imion i nazwisk, może tak być?
+  Przede wszystkim kwantyfikator ,,dla prawie wszystkich n'' może być
+zastąpiony przez ,,dla wszystkich n'' (przez odpowiednie powiększenie M - dopuszczalne, skoro
+suma ,,wyjątków'' jest zbiorem skończonym).
+  Wpierw zawieranie: warunek (KKJT) implikuje 
+bycie w ideale $A$:
+  Otóż wystarczy sprawdzić to tylko dla częściowych selektorów
+,,diadycznej'' partycji $([2^n, 2^{n+1})$ (w dalszej części będę te przedziały
+nazywał ,,diadycznymi'' choć nie wiem czy taka terminologia jest rozsądna).
+Bez zmniejszenia ogólności możemy rozważać całkowite selektory dla partycji
+diadycznej. Co więcej, możemy rozważać selektory dla partycji (tym razem
+partycji nie całego omega oczywiście) ,,diadycznej parzystej'' i ,,diadycznej nieparzystej'':
+chodzi o partycje: $([2^{2n}, 2^{2n+1})$ i odpowiednią ,,nieparzystą''.
+Niech zatem $a_n \in [2^{2n}, 2^{2n+1})$. Szacując iloraz $a_{n} : a_{n+1}$
+dostajemy że jest on mniejszy lub równy jedna druga. Identyczne
+rachowanie działa w przypadku partycji ,,diadycznonieparzystej'' I QED :-).
+  
+  W drugą stronę, oczywiście warunek $(KKJT)$ tworzy ,,ideał'' więc
+wystarczy go sprawdzić dla ciągu prawie cienkiego : $(a_n)$.
+Tu korzystam wprost z definicji z dysertacji doktorskiej Krzyśka:
+Skoro $\limsup \frac{a_n}{a_{n+1}} < 1$ to $\frac{a_n}{a_{n+1}} \leq \alpha$
+dla pewnego $\alpha < 1$ i od pewnego $n \geq N$.
+Teraz szacujemy: $(\frac{1}{\alpha})^k a_N \geq a_{N + k}$
+a ta nierówność daje nam w rutynowy sposób, zapewnie interesujące samo przez się,
+następujące logarytmiczne oszacowanie:
+  \[
+  | {a_n} \cap [A, B]| \leq 1 + \log_{\frac{1}{alpha}} \frac{B}{A} 
+  \]
+(dla $B > A > a_N$, $[A,B] to oczywiście przedział od A do B)
+co w przypadku $A = 2^n$, $B = 2^{n+1}$ daje oszacowanie liczby
+elementów ciągu $(a_n)$ wpadających do przedziału diadycznego przez constans.
+
+===========================================================================
