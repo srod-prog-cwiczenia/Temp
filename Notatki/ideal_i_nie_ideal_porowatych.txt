@@ -1,0 +1,41 @@
+  Na ostatnim naszym seminariospotkaniu zastanawialiśmy się 
+dla których definicji zbiorów porowatych zachodzi że od
+razu jest to ideał (nie ,,sigma''). Naturalnie nie
+stanowi to przeszkody gdy nie jest, bo 
+wówczas i tak się wygeneruje odpowiedni sigma-ideał a o takowy
+tu zwykle chodzi. Ale pytanie wydaje się być ciekawe samo w sobie
+więc wydaje mi się że warto napisać o tym na naszym wątku.
+  Przede wszystkim zatem co się tyczy porowatych 
+w sensie definicji z Wikipedii: 
+
+https://en.wikipedia.org/wiki/Porous_set
+
+(a zowią się one very-porous czy lower-porous - zależnie od źródła)
+to jest to ideał. Mianowicie
+jeśli bowiem $\epsilon_1$ i $\epsilon_2$ są 
+tymi $\epsilon_0$ - z definicji -  dla zbiorów porowatych A i B, 
+odpowiednio i tak samo $\alpha_1$ i $\alpha_2$ są tymi $\alpha$, to  
+wówczas wybierając kulę o promieniu 
+$r < \min(\epsilon_1, \epsilon_2)$ znajdziemy w niej kulę 
+o promieniu $\alpha_1 * r$ rozłączną z A a następnie znajdziemy z kolei w niej 
+zawartą kulę o promieniu $\alpha_1 * \alpha_2 * r$, rozłączną z B, 
+więc ostatecznie rozłączną z $A \cup B$. 
+Daje to tezę dla sumy zbiorów A, B z $\epsilon_0 = \min(\epsilon_1, \epsilon_2)$ 
+i $\alpha_0 = \alpha_1 * \alpha_2$.
+
+Jeśli chodzi zaś o klasyczną definicję porowatych (czyli tą weakly-porous
+czy raczej - upper-porous) to już tak nie będzie. Otóż jest znany
+przykład zbioru $E$ który jest porowaty (w tym słabym sensie) 
+a jego domknięcie już nie (bodajże niejaki Humke?). Istnieje więc punkt $x_0 \in \overline{E}$
+taki że odpowiednia granica górna dla domknięcia $E$ w punkcie $x_0$
+jest dodatnia. Wówczas taką samą wartośc ma rzeczona granica
+dla zbioru $E \cup \{x_0\}$ - wynika to z tego że
+liczba $I(x_0, E, \epsilon)$ (największa długość przedziału 
+otwartego zawartego w $(x_0 - \epsilon, x_0 + \epsilon)\setminus E$
+jest identyczna dla $E$ jak i dla domknięcia $E$.
+A to znaczy że zbiór $E \cup \{x_0\}$ nie jest porowaty (w punkcie $x_0$).
+Ale zarówno $E$ jak i oczywiście $\{x_0\}$ są zbiorami porowatymi, Q.E.D.
+  
+  Naturalnie można tę konstrukcję poprowadzić wprost, ale można
+skorzystać z już istniejącego wyniku.
+
