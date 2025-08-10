@@ -1,0 +1,87 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb} % ten pakiet jest nieodzowny m.in. po to aby zrenderowac instrukcje varsubsetneq
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+%\usepackage[mathscr]{eucal}
+\usepackage[mathscr]{euscript}
+\usepackage{eqlist}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem} % po to aby mozna bylo tworzyc otoczenie
+% enumerate z innymi sposobami numeracji itemow
+\usepackage{hyperref} % aby moc tworzyc linki w tekscie
+%%%%%%%%%%%%%%% Polish letter packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[polish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{t1enc}
+%%% pakiet do generowania belkotu (wypelniacza):
+\usepackage{lipsum}
+%%% pakiet do dodawania fikusnych notek `a la ``todo''
+\usepackage{todonotes}
+%Ten pakiet niby jest m.in. po to aby mozna bylo ,,lamac'' linie w komorkach i ,,glowie'' tabeli
+% (otoczenie table)
+\usepackage{makecell}
+%ten pakiet sluzy do eleganckiego formatowania listingow (programow? lecz zapewne nie tylko)
+\usepackage{listings}
+%ten pakiet sluzy do sprawdzania m.in. czy odpowiednie pozycje bibliograficzne
+%sa faktycznie uzywane w tresci pliku. Przypuszczalnie nalezy go
+%uruchamiac tylko podczas weryfikacji pliku - w oficjalnej wersji powininen byc wylaczony.
+\usepackage{refcheck}
+%pakiet dolaczony na razie po to aby moc utworzyc ,,monstrualne'' kwantyfikatory bigforall i bigexists
+\usepackage{graphicx}
+%pakiet rotating służy do obracania obiektów, takich jak tekst, tabele, obrazy, wykresy itp.
+\usepackage{rotating}
+%pakiet do zrecznego tworzenia wielowierszowych tabel.
+\usepackage{multirow}
+% pierwszy pakiet daje możliwość użycia fontów caligraficznych,
+% natiomiast nie mam pojęcia w jakim celu jest ten drugi pakiet,
+% ale on jest z całą pewnością powiązany z pierwszym.
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+Metryka Alexandra Dirmeiera:
+Oryginalna definicja: 
+\[ \| n \|_q = \sum_{\substack{\neg k | n \\ k \in \mathbb{N}}} \frac{1}{q^k} \]
+
+\[\rho(n,m) = \| n - m \|_q\]
+
+Oznaczenie:
+$\{a \cdot \mathbb{Z} + b\} = \{ a \cdot k + b: k \in \mathbb{Z}\}$.
+
+Teraz bierzemy zbiezny szereg o wyrazach nieujemnych:
+$\alpha_k > 0$, $\sum_{k = 1}^\infty \alpha_k < \infty$.
+
+Sprawdzenie że funkcja 
+\[
+\| n \|_\alpha = \sum_{\substack{\neg k | n \\ k \in \mathbb{N}}} \alpha_k 
+\]  
+jest faktycznie pseudonormą, czyli że:
+\begin{enumerate}
+\item
+  $\| n \|_\alpha = 0 \iff n = 0;$
+\item
+  $\|n + m\|_\alpha \leq \| n \|_\alpha + \| m \|_\alpha$. 
+\end{enumerate}
+jest identyczne i też łatwe jak w przypadku oryginalnego
+szeregu geometrycznego używanego przez Dirmeiera.
+
+Sprawdzenie ze $\rho_\alpha$ generuje topologię Furstenberga:
+
+Jesli mamy dana kule: 
+$K_\alpha(m,\varepsilon) = \{ n \in \mathbb{Z}: \| n - m\|_\alpha < \varepsilon\}$
+to wybieramy naturalne $K$ takie, ze
+$\sum_{k = K + 1}^\infty \alpha_k < \varepsilon$ i wtedy zachodzi:
+  $\{ K! \cdot \mathbb{Z} + m\} \subseteq K_\alpha(m,\varepsilon)$, 
+bowiem 
+  $\| K! \cdot l + m - m \|_\alpha = \| K! \cdot l \|_\alpha \leq \sum_{k = K + 1}^\infty < \varepsilon$.
+  
+Na odwrot, mamy 
+$K_\alpha(m, \alpha_n) \subseteq \{n \cdot\mathbb{Z} + m\}$.
+Istotnie, niech $M$ calkowite bedzie takie ze 
+$\|M - m\|_\alpha < \alpha_n$. Wowczas
+$n | M - m$, zatem $M - m = r\cdot n$, czyli $M = r\cdot n + m \in 
+\{n \cdot\mathbb{Z} + m\}$. 
+\end{document}
