@@ -13,9 +13,9 @@
 % enumerate z innymi sposobami numeracji itemow
 \usepackage{hyperref} % aby moc tworzyc linki w tekscie
 %%%%%%%%%%%%%%% Polish letter packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\usepackage[polish]{babel}
-%\usepackage[utf8]{inputenc}
-%\usepackage{t1enc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{t1enc}
 %%% pakiet do generowania belkotu (wypelniacza):
 \usepackage{lipsum}
 %%% pakiet do dodawania fikusnych notek `a la ``todo''
@@ -78,10 +78,44 @@ $\sum_{k = K + 1}^\infty \alpha_k < \varepsilon$ i wtedy zachodzi:
 bowiem 
   $\| K! \cdot l + m - m \|_\alpha = \| K! \cdot l \|_\alpha \leq \sum_{k = K + 1}^\infty < \varepsilon$.
   
-Na odwrot, mamy 
+Na odwrót, mamy 
 $K_\alpha(m, \alpha_n) \subseteq \{n \cdot\mathbb{Z} + m\}$.
-Istotnie, niech $M$ calkowite bedzie takie ze 
+Istotnie, niech $M$ całkowite bedzie takie ze 
 $\|M - m\|_\alpha < \alpha_n$. Wowczas
 $n | M - m$, zatem $M - m = r\cdot n$, czyli $M = r\cdot n + m \in 
 \{n \cdot\mathbb{Z} + m\}$. 
+
+
+Coś bardziej jeszcze ciekawego znalazłem i to znów w pracy Aleksandra Dirmeiera:
+Okazuje się że metryka zdefiniowana w następujący sposób również generuje topologię Furstenberga:
+
+\[
+\rho(n,m) = \| n - m \|
+\]
+gdzie
+\[
+  \| n \| = \frac{1}{M(n)},
+\]
+przy czym dodatkowo zakładamy że $\|0\| = 0$
+a
+\[
+M(n) = \max(k \geq 1 \colon 1 | n, 2|n, \ldots k | n) = \max(k \geq 1\colon [1:2:\ldots:k] | n).
+\]
+($[a:b]$ to oczywiście NWW).
+Tak naprawdę zamiast $\frac{1}{x}$ można tu wziąć dowolną malejącą i zbieżną do zera
+funkcję, to zawsze będzie metryka. 
+Dowcip polega na tym że ona znów generuje topologię Furstenberga! Zatem mamy kolejny
+przykład metryki ,,Furstenberga''. Wydaje mi się że to ona bardziej 
+będzie adekwatna do zbadania w niej zbiorów porowatych. 
+
+Swoją drogą ma ona ciekawą interpretację:
+na osi $\mathbb{Z}$ zaznaczamy po kolei: wielokrotności $1$, wielokrotności $2$, itd.itd.
+Części wspólne tych wielokrotności tworzą oczywiście sekwencję malejącą 
+zbiorów: $W_1, W_2, \ldots$ o przekroju postaci $\{0\}$. 
+No to patrzymy na ,,pierścienie'': $W_1 \setminus W_2$, $W_2 \setminus W_3$ itd.
+I na każdym takim coraz dalszym pierścieniu kładziemy coś malejącego do zera,
+no na przykład na pierwszym $\frac{1}{1}$, na drugim $\frac{1}{2}$, etc.
+i wtedy mamy już tę ,,normę'' $\|n\|$, która de facto jest wartością metryki $n$ od zera. 
+Dla zmierzenia odległości od $n$ do $m$ wystarczy zmierzyć odległość $n-m$ od zera.
+
 \end{document}
