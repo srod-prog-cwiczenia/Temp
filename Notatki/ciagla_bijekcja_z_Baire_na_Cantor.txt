@@ -24,3 +24,16 @@ $(1,0,*,0,*,*,1,*,*\ldots)$ -> $(1,0,0,0,*,0,1,*,1,\ldots)$
 I tak definiujemy ,,rekurencyjnie''. Ponieważ za każdym razem co najmniej
 jedna gwiazdka najbardziej na lewo znika, zatem ,,w nieskończoności'' powstanie
 sekwencja z $2^\omega$. Można dowieść że to jest funkcja ciągła i że to jest bijekcja.
+
+
+Może jeszcze więcej przykładów:
+gdy $n_k = 0$ to zamieniamy co drugą gwiazdkę począwszy od pierwszej na zera:
+czyli np:
+$(*,*,*,*,*,*,*,\ldots)$ -> $(0,*,0,*,0,*,0,\ldots)$,
+
+$(*,1,1,*,0,*,0,*,*,*,0,0,1,*\ldots)$ -> $(0,1,1,*,0,0,0,*,0,*,0,0,1,0\ldots)$ itd.
+
+A gdy np $n_k = 4$ to mamy np:
+$(*,*,*,*,*,*,*,\ldots)$ -> $(0,*,0,*,0,*,1,*,*,*,*,\ldots)$,
+
+$(*,1,1,*,*,*,0,*,*,0,1,1,*,*,\ldots)$ -> $(0,1,1,*,0,*,0,0,*,0,1,1,1,*,\ldots)$
