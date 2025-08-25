@@ -13,13 +13,13 @@ postępujemy jak opisaliśmy, tylko z gwiazdkami (wypełnionych miejsc już nie 
 np. z ciągu powiedzmy $(1,0,*,0,*,*,1,*,\ldots)$ robimy $(1,0,0,0,*,0,1,*,\ldots)$
 (nadal co drugą, począwszy od pierwszej na lewo gwiazdkę zamieniamy na $0$).
 
-Jeśli natomiast $n_k > 0$ to zamieniamy tylko pierwsze $n_k$ gwiazdek 
-i to według schematu $(*,*,*,\ldots)$ -> $(0,0,0,\ldots, 1)$, czyli: pierwsze $n_k - 1$ gwiazdek
-zamieniamy na zera, a $n_k$ - tą gwiazdkę na $1$. Nic innego nie zmieniamy. 
+Jeśli natomiast $n_k > 0$ to zamieniamy tylko pierwsze $n_k$ gwiazdek, też ,,co drugą''
+począwszy od pierwszej, czyli według schematu $(*,*,*,\ldots)$ -> $(0,*,0,\ldots, 1)$, czyli: pierwsze $n_k - 1$ gwiazdek
+(co drugą) zamieniamy na zera, a $n_k$ - tą gwiazdkę na $1$. Nic innego nie zmieniamy. 
 Czyli na przykład jeśli $n_k = 3$ to:
 
-$(*,*,*,*,*,*,*,\ldots)$ -> $(0,0,1,*,*,*,*,\ldots)$,
-$(1,0,*,0,*,*,1,*,\ldots)$ -> $(1,0,0,0,0,1,1,*,\ldots)$
+$(*,*,*,*,*,*,*,\ldots)$ -> $(0,*,0,*,1,*,*,\ldots)$,
+$(1,0,*,0,*,*,1,*,*\ldots)$ -> $(1,0,0,0,*,0,1,*,1,\ldots)$
 
 I tak definiujemy ,,rekurencyjnie''. Ponieważ za każdym razem co najmniej
 jedna gwiazdka najbardziej na lewo znika, zatem ,,w nieskończoności'' powstanie
