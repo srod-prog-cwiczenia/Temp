@@ -1,0 +1,55 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb} % ten pakiet jest nieodzowny m.in. po to aby zrenderowac instrukcje varsubsetneq
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+%\usepackage[mathscr]{eucal}
+\usepackage[mathscr]{euscript}
+\usepackage{eqlist}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem} % po to aby mozna bylo tworzyc otoczenie
+% enumerate z innymi sposobami numeracji itemow
+\usepackage{hyperref} % aby moc tworzyc linki w tekscie
+%%%%%%%%%%%%%%% Polish letter packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{t1enc}
+%%% pakiet do generowania belkotu (wypelniacza):
+\usepackage{lipsum}
+%%% pakiet do dodawania fikusnych notek `a la ``todo''
+\usepackage{todonotes}
+%Ten pakiet niby jest m.in. po to aby mozna bylo ,,lamac'' linie w komorkach i ,,glowie'' tabeli
+% (otoczenie table)
+\usepackage{makecell}
+%ten pakiet sluzy do eleganckiego formatowania listingow (programow? lecz zapewne nie tylko)
+\usepackage{listings}
+%ten pakiet sluzy do sprawdzania m.in. czy odpowiednie pozycje bibliograficzne
+%sa faktycznie uzywane w tresci pliku. Przypuszczalnie nalezy go
+%uruchamiac tylko podczas weryfikacji pliku - w oficjalnej wersji powininen byc wylaczony.
+\usepackage{refcheck}
+%pakiet dolaczony na razie po to aby moc utworzyc ,,monstrualne'' kwantyfikatory bigforall i bigexists
+\usepackage{graphicx}
+%pakiet rotating służy do obracania obiektów, takich jak tekst, tabele, obrazy, wykresy itp.
+\usepackage{rotating}
+%pakiet do zrecznego tworzenia wielowierszowych tabel.
+\usepackage{multirow}
+% pierwszy pakiet daje możliwość użycia fontów caligraficznych,
+% natiomiast nie mam pojęcia w jakim celu jest ten drugi pakiet,
+% ale on jest z całą pewnością powiązany z pierwszym.
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+{\bf Fakt:} Jeśli $c_1, c_2,\ldots \in \mathbf{Z}$
+to wtedy ciąg 
+\[
+  a_n = \sum_{j=1}^n c_j \cdot j!
+\]
+jest ciągiem Cauchyego w metrykach Furstenberga (chodzi o każdą z metryk: 
+$\|n\| = \sum_{\substack{\neg k | n\\ k \in \mathbf{N}}} \alpha_n$, lub 
+).
+
+
+\end{document}
