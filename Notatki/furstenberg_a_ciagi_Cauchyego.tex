@@ -49,7 +49,36 @@ to wtedy ciąg
 \]
 jest ciągiem Cauchyego w metrykach Furstenberga (chodzi o każdą z metryk: 
 $\|n\| = \sum_{\substack{\neg k | n\\ k \in \mathbf{N}}} \alpha_n$, lub 
+$\|n\| = 1/\max\{k: [1:\ldots:k] | n\}$.
 ).
 
+Wystarczy tylko zauważyć że dla $m > n$ mamy
+$a_m - a_n = \sum_{j=n+1}^m c_j \cdot j!$ a każde takie $j!$ jest 
+podzielne przez $n!$, więc $k | a_m - a_n$ dla $k=1,2,\ldots,n$, 
+co pozwala dla każdego $\varepsilon > 0$ dobrać tak duże $n$
+że $\|a_m - a_n\| < \varepsilon$ dla $m > n$.
 
+
+Niech teraz $K \colon \mathit{Prime}\setminus \{2\} \to \mathbb{Z}$ będzie
+ustaloną bijekcją. Definiujemy indukcyjnie liczby $c_n$:
+
+Dla $p \in \mathit{Prime}\setminus \{2\}$
+wiemy z twierdzenia Wilsona że $(p-1)! \equiv -1(\pmod p)$.
+Wybieramy więc dowolne $c_{p-1}$ ale takie by
+$c_{p-1} \not\equiv \sum_{j=1}^{p-2} c_j \cdot j! - K(p) (\pmod p)$.
+
+Dla pozostałych $n$ kładziemy $c_n$ dowolnie (możemy np. nawet zero).
+
+W ten sposób konstruujemy $(c_n)$. I definiujemy j.w. ciąg $(a_n)$.
+
+Mamy:
+$a_{p-1} - K(p) \not\equiv 0 (\pmod p)$, 
+i dla $n > p$: skoro $\sum_{j=p}^{n} c_j\cdot j!$ jest podzielna przez $p$,
+więc $a_n - K(p)$ nie dzieli się przez $p$. 
+
+Dla każdego $k\in\mathbb{Z}$ wybieramy $p\in\mathit{Prime}\setminus \{2\}$ takie że
+$K(p) = k$ i wtedy dla $n > p$, $a_n - k$ nie dzieli się przez p,
+stąd $\|a_n - k\| \geq \varepsilon$ (np dla 
+$\|\cdot \|_q$ mamy $\varepsilon = 1/q^p$) dla $n > p$, czyli $(a_n)$
+nie może być zbieżny do $k$.
 \end{document}
