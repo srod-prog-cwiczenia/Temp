@@ -41,9 +41,175 @@
 \usepackage{calligra}
 \usepackage[T1]{fontenc}
 
+
+%---------------------------------------------------------------------
+% Theorems 
+%---------------------------------------------------------------------
+ 
+% Theorem style 'plain' are for: Theorem, Lemma, Corollary,
+% Proposition, Conjecture, Criterion, Algorithm
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conclusion}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{axiom}{Axiom}
+% Theorem style 'definition' are for: Definition, Condition, Problem,
+% Example
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem*{solution}{Solution}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{Problem}[theorem]{Problem}
+% Theorem style 'remark' are for: Remark, Note, Notation, Claim,
+% Summary, Acknowledgement, Case, Conclusion
+\theoremstyle{remark}
+\newtheorem*{notation}{Notation}
+\newtheorem*{acknowledgement}{Acknowledgement}
+
+
+%%%%%% makra:
+
+%A
+\newcommand{\afc}{\mathrm{AFC}}
+\newcommand{\afcbar}{\overline{\afc}}
+\newcommand{\arr}{\rightarrow}
+\newcommand{\Arr}{\Rightarrow}
+
+%B
+\newcommand{\baire}{\omega^{\omega}}
+\newcommand{\Bor}{\mbox{$\mathcal{Bor}$}}
+
+%C
+\newcommand{\ca}{2^{\omega}}
+\newcommand{\cantor}{\ca}
+\newcommand{\Card}[1]{\Vert #1 \Vert}
+
+%D
+\newcommand{\dom}{{\rm dom}}
+\newcommand{\dummy}{{\tt Blah blah blah}}
+
+%E
+\newcommand{\Even}{\hbox{\rm \tiny Even}}
+
+%F
+\newcommand{\finsub}{[\omega]^{<\omega}}
+\newcommand{\forces}{\mathrel{\|}\joinrel\mathrel{-}}
+
+%G
+\newcommand{\Graph}{\hbox{\it Graph}}
+\newcommand{\Graphit}{{\mathit Graph}}
+\newcommand{\Graphh}{\operatorname{Graph}}
+
+%H
+\newcommand{\homeomorphic}{\approx}
+
+%I
+\newcommand{\incr}{\omega^{\uparrow \omega }}
+\newcommand{\infsub}{[\omega]^{\omega}}
+\newcommand{\integers}{\mathbb{Z}}
+
+%L
+\newcommand{\la}{\langle}
+
+%M
+\newcommand{\meager}{{\cal MGR}}
+\newcommand{\minideal}{${\cal F}_{\hbox{\rm \scriptsize min}}(\neg
+  D)\;$}
+
+%N
+\newcommand{\neglig}{{\cal N}}
+\newcommand{\nnatural}{\mathbb{N}}
+
+%O
+\newcommand{\Odd}{\hbox{\rm \tiny Odd}}
+
+%P
+\newcommand{\Part}{{\it Part}}
+\newcommand{\Perf}{{\it Perf}}
+%%%\newcommand{\proof}{\flushleft{ \sc Proof. } \\ }
+\newcommand{\Proof}[1]{\bigbreak\noindent{\bf Proof #1}\enspace}
+
+%Q
+%%%\newcommand{\qed}{{\hfill\vrule height6pt width6pt depth1pt\medskip}}
+%\newcommand{\qed}{\sharp}
+% to poniżej w komentarz o ile używamy pakietu stix
+%\newcommand{\QED}{\hspace{0.1in} \Box \vspace{0.1in}}
+
+%R
+\newcommand{\ra}{\rangle}
+\newcommand{\ran}{{\rm ran}}
+\newcommand{\rational}{\mathbb{Q}}
+\newcommand{\real}{\mathbb{R}}
+
+%S
+\newcommand{\seq}{\subseteq}
+%%%\newcommand{\square}{\hbox{\ \ \ \ \ \vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
+% a small restriction:
+\newcommand{\srestriction}{{\hbox{${\scriptstyle\,|\grave{}\,}$}}}
+\newcommand{\supp}{\mathit{supp}}
+
+%U
+\newcommand{\up}{\uparrow}
+\newcommand{\ucrz}{UCR_0}
+
+%%%%%%%%%%%%%%%%%%%%%% Calligraphic font commands %%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calI}{\mathcal{I}}
+\newcommand{\calJ}{\mathcal{J}}
+\newcommand{\calK}{\mathcal{K}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calQ}{\mathcal{Q}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calT}{\mathcal{T}}
+\newcommand{\calU}{\mathcal{U}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calZ}{\mathcal{Z}}
+%%%%%%%%%%%%%%%%%%%%%% inne %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\SqrFr}{\mathbb{SF}}
+\newcommand{\Primes}{\mathit{Primes}}
+\newcommand{\mathint}{\mathit{int}}
+\newcommand{\mathcl}{\mathit{cl}}
+\newcommand{\exampleGFnotK}{\mathit{Ex}}
+%%%%%%%%%%%%%%%%%%%%%% Some Greek fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\oo}{\omega}
+\newcommand{\bb}{\beta}
+\newcommand{\dd}{\delta}
+\newcommand{\ee}{\varepsilon}
+\newcommand{\kk}{\kappa}
+%%%\newcommand{\th}{\theta}
+\newcommand{\stirlingii}{\genfrac{\{}{\}}{0pt}{}}
+%%% makra dla utworzenia monstrualnych kwantyfikatorow:
+\newcommand{\bigforall}{\mbox{\Large $\mathsurround0pt\forall$}}
+\newcommand{\bigexists}{\mbox{\Large $\mathsurround0pt\exists$}}
+
+%%% Makra charakterystyczne dla tej pracy:
+\newcommand{\PrimeOdd}{\mathit{Prime}\setminus \{2\}}
+
 \begin{document}
-{\bf Fakt:} Jeśli $c_1, c_2,\ldots \in \mathbf{Z}$
-to wtedy ciąg 
+\begin{lemma}
+  Jeśli $c_1, c_2,\ldots \in \mathbf{Z}$
+  są dowolne to wtedy ciąg 
 \[
   a_n = \sum_{j=1}^n c_j \cdot j!
 \]
@@ -51,28 +217,45 @@ jest ciągiem Cauchyego w metrykach Furstenberga (chodzi o każdą z metryk:
 $\|n\| = \sum_{\substack{\neg k | n\\ k \in \mathbf{N}}} \alpha_k$, lub 
 $\|n\| = 1/\max\{k: [1:\ldots:k] | n\}$.
 ).
+\end{lemma}
 
+\begin{proof}
 Wystarczy tylko zauważyć że dla $m > n$ mamy
 $a_m - a_n = \sum_{j=n+1}^m c_j \cdot j!$ a każde takie $j!$ jest 
 podzielne przez $n!$, więc $k | a_m - a_n$ dla $k=1,2,\ldots,n$, 
 co pozwala dla każdego $\varepsilon > 0$ dobrać tak duże $n$
 że $\|a_m - a_n\| < \varepsilon$ dla $m > n$.
+Z tego już wynika warunek Cauchy'ego dla ciągu $(a_n)$.
+\end{proof}
 
-
-Niech teraz $K \colon \mathit{Prime}\setminus \{2\} \to \mathbb{Z}$ będzie
+Niech teraz $K \colon \PrimeOdd \to \mathbb{Z}$ będzie
 ustaloną bijekcją. Definiujemy indukcyjnie liczby $c_n$:
 
-Dla $p \in \mathit{Prime}\setminus \{2\}$
-wiemy z twierdzenia Wilsona że $(p-1)! \equiv -1(\pmod p)$.
+\flushleft{Przypadek 1:} $n + 1 \not\in \PrimeOdd$.
+Wówczas za $c_n$ kładziemy dowolną liczbę całkowitą,
+może to być nawet i zero.
+
+\flushleft{Przypadek 2:} $n + 1 \in \PrimeOdd$.
+Wybieramy $c_n\in\integers$ tak aby
+\[
+c_n \not\equiv \sum_{j = 1}^{n - 1} c_j \cdot j! - K(n + 1) \pmod{n + 1}.
+\]
+W ten sposób konstrukcja indukcyjna liczb $c_n$ jest zakończona.
+
+\begin{fact}
+  Dla $p \in \PrimeOdd$ mamy
+  $a_{p-1} - K(p) \not\equiv 0 \pmod p$.
+\end{fact}
+Wiemy z twierdzenia Wilsona że $(p-1)! \equiv -1\pmod p$.
 Wybieramy więc dowolne $c_{p-1}$ ale takie by
-$c_{p-1} \not\equiv \sum_{j=1}^{p-2} c_j \cdot j! - K(p) (\pmod p)$.
+$c_{p-1} \not\equiv \sum_{j=1}^{p-2} c_j \cdot j! - K(p) \pmod p$.
 
 Dla pozostałych $n$ kładziemy $c_n$ dowolnie (możemy np. nawet zero).
 
 W ten sposób konstruujemy $(c_n)$. I definiujemy j.w. ciąg $(a_n)$.
 
 Mamy:
-$a_{p-1} - K(p) \not\equiv 0 (\pmod p)$, 
+$a_{p-1} - K(p) \not\equiv 0 \pmod p$, 
 i dla $n > p$: skoro $\sum_{j=p}^{n} c_j\cdot j!$ jest podzielna przez $p$,
 więc $a_n - K(p)$ nie dzieli się przez $p$. 
 
