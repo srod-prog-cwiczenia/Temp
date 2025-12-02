@@ -28,7 +28,7 @@
 %ten pakiet sluzy do sprawdzania m.in. czy odpowiednie pozycje bibliograficzne
 %sa faktycznie uzywane w tresci pliku. Przypuszczalnie nalezy go
 %uruchamiac tylko podczas weryfikacji pliku - w oficjalnej wersji powininen byc wylaczony.
-\usepackage{refcheck}
+%\usepackage{refcheck}
 %pakiet dolaczony na razie po to aby moc utworzyc ,,monstrualne'' kwantyfikatory bigforall i bigexists
 \usepackage{graphicx}
 %pakiet rotating służy do obracania obiektów, takich jak tekst, tabele, obrazy, wykresy itp.
@@ -237,22 +237,32 @@ może to być nawet i zero.
 
 \flushleft{Przypadek 2:} $n + 1 \in \PrimeOdd$.
 Wybieramy $c_n\in\integers$ tak aby
-\[
+\begin{equation}\label{warunek-z-przypadku-2}\tag*{*}
 c_n \not\equiv \sum_{j = 1}^{n - 1} c_j \cdot j! - K(n + 1) \pmod{n + 1}.
-\]
+\end{equation}
 W ten sposób konstrukcja indukcyjna liczb $c_n$ jest zakończona.
-
+Zatem mamy skonstruowany ciąg $(c_n)$ a dla niego definiujemy,
+jak opisano to wyżej, ciąg $(a_n)$.
 \begin{fact}
   Dla $p \in \PrimeOdd$ mamy
   $a_{p-1} - K(p) \not\equiv 0 \pmod p$.
 \end{fact}
-Wiemy z twierdzenia Wilsona że $(p-1)! \equiv -1\pmod p$.
-Wybieramy więc dowolne $c_{p-1}$ ale takie by
+\begin{proof}
+  Mamy:
+  \[a_{p-1} - K(p) = \sum_{j = 1}^{p - 1} c_j \cdot j!\]
+  \[= \sum_{j = 1}^{p - 2} c_j \cdot j! + c_{p - 1} (p - 1)! - K(p)\]
+  Ponieważ $p$ jest liczbą pierwszą, zatem wiemy z
+  twierdzenia Wilsona że $(p-1)! \equiv -1\pmod p$.
+  Mamy zatem dalej:
+  \[\sum_{j = 1}^{p - 1} c_j \cdot j! + c_{p - 1} (p - 1)! - K(p) =\]
+  \[\sum_{j = 1}^{p - 2} c_j \cdot j! - c_{p - 1} - K(p) \not\equiv 0 \pmod p.\]
+  (po zastosowaniu warunku (\ref{warunek-z-przypadku-2})
+\end{proof}
+
+
 $c_{p-1} \not\equiv \sum_{j=1}^{p-2} c_j \cdot j! - K(p) \pmod p$.
 
-Dla pozostałych $n$ kładziemy $c_n$ dowolnie (możemy np. nawet zero).
 
-W ten sposób konstruujemy $(c_n)$. I definiujemy j.w. ciąg $(a_n)$.
 
 Mamy:
 $a_{p-1} - K(p) \not\equiv 0 \pmod p$, 
