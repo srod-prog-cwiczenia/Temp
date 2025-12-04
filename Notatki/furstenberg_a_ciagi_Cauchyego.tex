@@ -207,16 +207,26 @@
 \newcommand{\PrimeOdd}{\mathit{Prime}\setminus \{2\}}
 
 \begin{document}
+Metryki na $\integers$ które generują topologię Furstenberga:
+\begin{itemize}
+\item
+  $\|n\| = \sum_{\substack{\neg k | n\\ k \in \mathbf{N}}} \alpha_k$
+  ($(\alpha_k)$ to ciąg liczb dodatnich i takich że $\sum_{k=1}^\infty \alpha_k < \infty$);
+\item
+  $\|n\| = 1/\max\{k: [1:\ldots:k] | n\}$;
+\item
+  $\|n\| = 1/\max\{k: k! | n\}$.
+\end{itemize}
+
+
 \begin{lemma}
   Jeśli $c_1, c_2,\ldots \in \mathbf{Z}$
   są dowolne to wtedy ciąg 
 \[
   a_n = \sum_{j=1}^n c_j \cdot j!
 \]
-jest ciągiem Cauchyego w metrykach Furstenberga (chodzi o każdą z metryk: 
-$\|n\| = \sum_{\substack{\neg k | n\\ k \in \mathbf{N}}} \alpha_k$, lub 
-$\|n\| = 1/\max\{k: [1:\ldots:k] | n\}$.
-).
+jest ciągiem Cauchyego w metrykach Furstenberga (chodzi o dowolną z metryk
+w uwadze powyżej).
 \end{lemma}
 
 \begin{proof}
@@ -237,13 +247,13 @@ może to być nawet i zero.
 
 \flushleft{Przypadek 2:} $n + 1 \in \PrimeOdd$.
 Wybieramy $c_n\in\integers$ tak aby
-\begin{equation}\label{warunek-z-przypadku-2}\tag*{*}
+\begin{equation}\label{warunek-z-przypadku-2}\tag*{(*)}
 c_n \not\equiv \sum_{j = 1}^{n - 1} c_j \cdot j! - K(n + 1) \pmod{n + 1}.
 \end{equation}
 W ten sposób konstrukcja indukcyjna liczb $c_n$ jest zakończona.
 Zatem mamy skonstruowany ciąg $(c_n)$ a dla niego definiujemy,
 jak opisano to wyżej, ciąg $(a_n)$.
-\begin{fact}
+\begin{fact}\label{fact:fakt-nr-1}
   Dla $p \in \PrimeOdd$ mamy
   $a_{p-1} - K(p) \not\equiv 0 \pmod p$.
 \end{fact}
@@ -256,22 +266,35 @@ jak opisano to wyżej, ciąg $(a_n)$.
   Mamy zatem dalej:
   \[\sum_{j = 1}^{p - 1} c_j \cdot j! + c_{p - 1} (p - 1)! - K(p) =\]
   \[\sum_{j = 1}^{p - 2} c_j \cdot j! - c_{p - 1} - K(p) \not\equiv 0 \pmod p.\]
-  (po zastosowaniu warunku (\ref{warunek-z-przypadku-2})
+  (po zastosowaniu warunku \ref{warunek-z-przypadku-2}
 \end{proof}
 
+\begin{fact}\label{fact:fakt-nr-2}
+  Dla $n \geq p$, $p \in \PrimeOdd$ mamy że
+  $a_n - K(p) \not\equiv 0 \pmod p$.
+\end{fact}
+\begin{proof}
+  Mamy:
+  \[a_n - K(p) = \sum_{j=1}^{n} c_j \cdot j! - K(p) = \]
+  \[\sum_{j=1}^{p-1} c_j \cdot j! - K(p) + \sum_{j=p}^{n} c_j \cdot j!. \]
 
-$c_{p-1} \not\equiv \sum_{j=1}^{p-2} c_j \cdot j! - K(p) \pmod p$.
+  Z Faktu \ref{fact:fakt-nr-1} wiemy że
+  $a_{p-1} - K(p) \not\equiv 0 \pmod p$,
+  czyli $\neg (p | a_{p-1} - K(p))$, a znaczy to że
+  $\neg (p |\sum_{j=1}^{p-1} c_j \cdot j! - K(p))$.
+  Dla $j = p, \ldots, n$ mamy że $p | j!$, czyli
+  $\sum_{j=p}^{n} c_j\cdot j!$ jest podzielna przez $p$.
 
+  Finalnie zatem
+  $\sum_{j=1}^{p-1} c_j \cdot j! - K(p) +  \sum_{j=p}^{n} c_j \cdot j!$
+  nie dzieli się przez $p$, czyli 
+  $a_n - K(p)$ nie dzieli się przez $p$. 
+\end{proof}
 
-
-Mamy:
-$a_{p-1} - K(p) \not\equiv 0 \pmod p$, 
-i dla $n > p$: skoro $\sum_{j=p}^{n} c_j\cdot j!$ jest podzielna przez $p$,
-więc $a_n - K(p)$ nie dzieli się przez $p$. 
-
-Dla każdego $k\in\mathbb{Z}$ wybieramy $p\in\mathit{Prime}\setminus \{2\}$ takie że
-$K(p) = k$ i wtedy dla $n > p$, $a_n - k$ nie dzieli się przez p,
-stąd $\|a_n - k\| \geq \varepsilon$ (np dla 
-$\|\cdot \|_q$ mamy $\varepsilon = 1/q^p$) dla $n > p$, czyli $(a_n)$
-nie może być zbieżny do $k$.
+Dla każdego $k\in\mathbb{Z}$ wybieramy $p(k)\in\PrimeOdd$ takie że
+$K(p(k)) = k$ i wtedy, na mocy Faktu \ref{fact:fakt-nr-2}
+dla $n > p$, $a_n - k$ nie dzieli się przez p(k).
+Stąd $\|a_n - k\| \geq \varepsilon$ (np dla 
+$\|\cdot \|_q$ mamy $\varepsilon = 1/q^p$) dla $n > p$, czyli ciąg $(a_n)$
+nie może być zbieżny do $k$ w metryce $\|\cdot\|$.
 \end{document}
