@@ -205,6 +205,7 @@
 %%% Makra charakterystyczne dla tej pracy:
 \newcommand{\zbiorPe}[1]{P_{#1}}
 \newcommand{\zbiorA}[1]{A_{#1}}
+\newcommand{\laMitad}{\frac{1}{2}} %%% to makro przekopiować do micro.
 
 \begin{document}
 \begin{definition}
@@ -257,4 +258,27 @@ Dowodzi to że $X \in \zbiorA{r}$.
 Zauważmy też że $\zbiorA{0} = \zbiorPe{0}$ oraz
 $\zbiorA{1} = \zbiorPe{1}$.
 
+\begin{example}
+Przykład że $\zbiorA{r} \not\subseteq \zbiorPe{r}$.
+\end{example}
+\begin{proof}
+Niech dla $k \geq 1$, $D_k := [2^k; 2^k + 2^{k-1}) \cap \omega$
+i kładziemy $X := \bigcup_{k = 1}^\infty D_k$.
+Wówczas dla $k \geq 1$ mamy że
+$X \cap [2^k; 2^{k+1}) = D_k$ więc
+$|X \cap [2^k; 2^{k+1})| = |D_k| = 2^{k-1}$,
+czyli
+\[
+  \lim_{k\to\infty} \frac{|X \cap [2^k; 2^{k+1})|}{2^k} = \laMitad,
+\]
+zatem $X \in \zbiorA{\laMitad}$.
+Ale $X \not\in\zbiorPe{\laMitad}$, bo mamy
+$|[2; 2^k) \cap X| = \frac{2^k - 2}{2} = 2^{k-1} - 1$.
+Z drugiej strony, mamy
+$|[2; 2^k + 2^{k-1}) \cap X| = |[2; 2^k) \cap X| + |[2^k; 2^k + 2^{k - 1}) \cap X| =$
+$= 2^{k-1} - 1 + 2^{k-1} = 2^k - 1$.
+Czyli
+$\frac{|[2; 2^k + 2^{k-1}) \cap X|}{2^k + 2^{k-1}} = \frac{2^k - 1}{2^k + 2^{k-1}}$
+ale $\lim_{k\to\infty} \frac{2^k - 1}{2^k + 2^{k-1}} = \frac{2}{3}$.
+\end{proof}
 \end{document}
