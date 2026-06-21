@@ -1,0 +1,361 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                       %
+%                          Szablon                                      %
+%                                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[12pt]{article}
+%%% aby uzyc amsart w pelnej krasie:
+% 1. odkomentowac \address i \email
+% 2. odkomentowac \keywords{} \subjclass
+\documentclass[12pt]{amsart}
+\usepackage{amssymb} % ten pakiet jest nieodzowny m.in. po to aby zrenderowac instrukcje varsubsetneq
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+%\usepackage[mathscr]{eucal}
+\usepackage[mathscr]{euscript}
+\usepackage{eqlist}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem} % po to aby mozna bylo tworzyc otoczenie
+% enumerate z innymi sposobami numeracji itemow
+\usepackage{hyperref} % aby moc tworzyc linki w tekscie
+%%%%%%%%%%%%%%% Polish letter packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[polish]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage{t1enc}
+%%% pakiet do generowania belkotu (wypelniacza):
+\usepackage{lipsum}
+%%% pakiet do dodawania fikusnych notek `a la ``todo''
+\usepackage{todonotes}
+%Ten pakiet niby jest m.in. po to aby mozna bylo ,,lamac'' linie w komorkach i ,,glowie'' tabeli
+% (otoczenie table)
+\usepackage{makecell}
+%ten pakiet sluzy do eleganckiego formatowania listingow (programow? lecz zapewne nie tylko)
+\usepackage{listings}
+%ten pakiet sluzy do sprawdzania m.in. czy odpowiednie pozycje bibliograficzne
+%sa faktycznie uzywane w tresci pliku. Przypuszczalnie nalezy go
+%uruchamiac tylko podczas weryfikacji pliku - w oficjalnej wersji powininen byc wylaczony.
+\usepackage{refcheck}
+%pakiet dolaczony na razie po to aby moc utworzyc ,,monstrualne'' kwantyfikatory bigforall i bigexists
+\usepackage{graphicx}
+%pakiet rotating służy do obracania obiektów, takich jak tekst, tabele, obrazy, wykresy itp.
+\usepackage{rotating}
+%pakiet do zrecznego tworzenia wielowierszowych tabel.
+\usepackage{multirow}
+% nie dość że zawiera wiele symboli matematycznych to jeszcze daje
+% lepszy (bardziej profesjonalny lub wyrazisty) design.
+\usepackage{stix}
+% po to by używać bibera:
+\usepackage[backend=biber]{biblatex}
+% pierwszy pakiet daje możliwość użycia fontów caligraficznych,
+% natiomiast nie mam pojęcia w jakim celu jest ten drugi pakiet,
+% ale on jest z całą pewnością powiązany z pierwszym.
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+%%% to jest celem podkreślenia tekstu przez ,,wężyk''.
+\usepackage{ulem}
+
+%%% to pozwala kontrolować overfulle, są one zaznaczane na marginesie czarną beleczką (o zadanym rozmiarze):
+\overfullrule=5pt 
+
+%---------------------------------------------------------------------
+% Theorems 
+%---------------------------------------------------------------------
+ 
+% Theorem style 'plain' are for: Theorem, Lemma, Corollary,
+% Proposition, Conjecture, Criterion, Algorithm
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conclusion}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{axiom}{Axiom}
+% Theorem style 'definition' are for: Definition, Condition, Problem,
+% Example
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem*{solution}{Solution}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{Problem}[theorem]{Problem}
+% Theorem style 'remark' are for: Remark, Note, Notation, Claim,
+% Summary, Acknowledgement, Case, Conclusion
+\theoremstyle{remark}
+\newtheorem*{notation}{Notation}
+\newtheorem*{acknowledgement}{Acknowledgement}
+
+%%%%%% makra:
+
+%A
+\newcommand{\afc}{\mathrm{AFC}}
+\newcommand{\afcbar}{\overline{\afc}}
+\newcommand{\arr}{\rightarrow}
+\newcommand{\Arr}{\Rightarrow}
+
+%B
+\newcommand{\baire}{\omega^{\omega}}
+\newcommand{\Bor}{\mbox{$\mathcal{Bor}$}}
+
+%C
+\newcommand{\ca}{2^{\omega}}
+\newcommand{\cantor}{\ca}
+\newcommand{\Card}[1]{\Vert #1 \Vert}
+
+%D
+\newcommand{\dom}{{\rm dom}}
+\newcommand{\dummy}{{\tt Blah blah blah}}
+
+%E
+\newcommand{\Even}{\hbox{\rm \tiny Even}}
+
+%F
+\newcommand{\finsub}{[\omega]^{<\omega}}
+\newcommand{\forces}{\mathrel{\|}\joinrel\mathrel{-}}
+
+%G
+\newcommand{\Graph}{\hbox{\it Graph}}
+\newcommand{\Graphit}{{\mathit Graph}}
+\newcommand{\Graphh}{\operatorname{Graph}}
+
+%H
+\newcommand{\homeomorphic}{\approx}
+
+%I
+\newcommand{\incr}{\omega^{\uparrow \omega }}
+\newcommand{\infsub}{[\omega]^{\omega}}
+
+%L
+\newcommand{\la}{\langle}
+
+%M
+\newcommand{\meager}{{\cal MGR}}
+\newcommand{\minideal}{${\cal F}_{\hbox{\rm \scriptsize min}}(\neg
+  D)\;$}
+
+%N
+\newcommand{\neglig}{{\cal N}}
+\newcommand{\nnatural}{\mathbb{N}}
+
+%O
+\newcommand{\Odd}{\hbox{\rm \tiny Odd}}
+
+%P
+\newcommand{\Part}{{\it Part}}
+\newcommand{\Perf}{{\it Perf}}
+%%%\newcommand{\proof}{\flushleft{ \sc Proof. } \\ }
+\newcommand{\Proof}[1]{\bigbreak\noindent{\bf Proof #1}\enspace}
+
+%Q
+%%%\newcommand{\qed}{{\hfill\vrule height6pt width6pt depth1pt\medskip}}
+%\newcommand{\qed}{\sharp}
+% to poniżej w komentarz o ile używamy pakietu stix
+%\newcommand{\QED}{\hspace{0.1in} \Box \vspace{0.1in}}
+
+%R
+\newcommand{\ra}{\rangle}
+\newcommand{\ran}{{\rm ran}}
+\newcommand{\rational}{\mathbb{Q}}
+\newcommand{\real}{\mathbb{R}}
+
+%S
+\newcommand{\seq}{\subseteq}
+%%%\newcommand{\square}{\hbox{\ \ \ \ \ \vrule\vbox{\hrule\phantom{o}\hrule}\vrule}}
+% a small restriction:
+\newcommand{\srestriction}{{\hbox{${\scriptstyle\,|\grave{}\,}$}}}
+\newcommand{\supp}{\mathit{supp}}
+
+%U
+\newcommand{\up}{\uparrow}
+\newcommand{\ucrz}{UCR_0}
+
+%%%%%%%%%%%%%%%%%%%%%% Calligraphic font commands %%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calE}{\mathcal{E}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calI}{\mathcal{I}}
+\newcommand{\calJ}{\mathcal{J}}
+\newcommand{\calK}{\mathcal{K}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calM}{\mathcal{M}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calQ}{\mathcal{Q}}
+\newcommand{\calR}{\mathcal{R}}
+\newcommand{\calS}{\mathcal{S}}
+\newcommand{\calT}{\mathcal{T}}
+\newcommand{\calU}{\mathcal{U}}
+\newcommand{\calV}{\mathcal{V}}
+\newcommand{\calW}{\mathcal{W}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\calY}{\mathcal{Y}}
+\newcommand{\calZ}{\mathcal{Z}}
+%%%%%%%%%%%%%%%%%%%%%% inne %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\SqrFr}{\mathbb{SF}}
+\newcommand{\Primes}{\mathit{Primes}}
+\newcommand{\mathint}{\mathit{int}}
+\newcommand{\mathcl}{\mathit{cl}}
+\newcommand{\exampleGFnotK}{\mathit{Ex}}
+%%%%%%%%%%%%%%%%%%%%%% Some Greek fonts %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\oo}{\omega}
+\newcommand{\bb}{\beta}
+\newcommand{\dd}{\delta}
+\newcommand{\ee}{\varepsilon}
+\newcommand{\kk}{\kappa}
+%%%\newcommand{\th}{\theta}
+\newcommand{\stirlingii}{\genfrac{\{}{\}}{0pt}{}}
+%%% makra dla utworzenia monstrualnych kwantyfikatorow:
+\newcommand{\bigforall}{\mbox{\Large $\mathsurround0pt\forall$}}
+\newcommand{\bigexists}{\mbox{\Large $\mathsurround0pt\exists$}}
+
+%%%% makra do ideałów:
+\newcommand{\idealZbiorowSkonczonych}{\Fin}
+\newcommand{\nonPiecewiseSyndetic}{\mathrm{nPS}}
+\newcommand{\idealZbiorowNonPiecewiseSyndetic}{\nonPiecewiseSyndetic}
+\newcommand{\idealSumowalny}{\cI_{(\alpha_n)}}
+\newcommand{\idealHarmoniczny}{\cI_{\frac{1}{n}}}
+\newcommand{\vanderWaerdenIdeal}{\mathrm{W}}
+\newcommand{\idealVanDerWaerdena}{\vanderWaerdenIdeal}
+\newcommand{\idealGestosciowy}{\mathcal{I}_d}
+\newcommand{\idealJednostajny}{\mathcal{I}_u}
+\newcommand{\idealHindmana}{\mathcal{H}}
+\newcommand{\idealFolkmana}{\mathcal{F}}
+\newcommand{\idealThinSets}{\mathcal{T}}
+\newcommand{\idealZbiorowCienkich}{\idealThinSets}
+\newcommand{\idealRoznicowy}{\mathcal{D}}
+\newcommand{\idealRoznicowyFin}{\mathcal{D}_{\mathit{fin}}}
+\newcommand{\idealLacunary}{\mathcal{L}\mathit{ac}}
+\newcommand{\idealAlmostThinSets}{\mathcal{A}}
+\newcommand{\idealZbiorowPrawieCienkich}{\idealAlmostThinSets}
+\newcommand{\sidonIdeal}{\mathcal{S}\mathit{i}}
+\newcommand{\differenceIdeal}{\idealRoznicowy}
+\newcommand{\differenceIdealFin}{\idealRoznicowyFin}
+
+%\renewcommand\abstractname{Summary}
+%%%To print the date and time on each page
+%%% comment out if not needed (next 14 lines)
+
+\pagestyle{myheadings}
+\markboth{{\bf Adam Kowalski}}{\bf \today}
+
+%%%% opcjonalne dolaczanie komentarzy na marginesie (uruchomic zdejmujac komentarze z kodu ponizej):
+%\typein[\wersjaRELEASE]{Czy wygenerowac wersje RELEASE ? (t/n)}
+%\if\wersjaRELEASE t
+%\typeout{Zostanie wygenerowana wersja RELEASE}
+%\else
+%\typeout{Zostanie wygenerowana wersja ROBOCZA}
+%\fi
+%\if\wersjaRELEASE t
+%\def\uwzglednicKomentarze{n}
+%\else
+%\def\uwzglednicKomentarze{t}
+%\fi
+%\if\uwzglednicKomentarze t
+%\typeout{Do kompilacji ZOSTANA dolaczone komentarze}
+%\else
+%\typeout{Plik przekompiluje sie BEZ dolaczania komentarzy}
+%\fi
+%%%% jesli powyzej jest w komentarzu to na stale dodajemy opisy na marginesie:
+\def\uwzglednicKomentarze{t}
+\newcommand{\comentario}[1]{\if\uwzglednicKomentarze t \marginpar{\tt #1} \fi}
+% To see corrections comment next line and uncomment the second one
+\newcommand{\correction}[2]{#1}
+% \newcommand{\correction}[2]{#2}
+\addbibresource{n_hindmany.bib}
+
+\begin{document}
+\title{
+Ideały n-Hindmana.
+}
+\maketitle
+
+\section{Preliminaria}
+
+W niezwykle dziś rozbudowanej i burzliwie się
+rozwijąjącej teorii ideałów podzbiorów liczb naturalnych
+niebagatelną rolę odgrywają w niej tak zwane ideały podziałowe.
+Są to ideały których geneza definicji bierze swój początek
+od swoistych twierdzeń kombinatorycznych, tak zwanych twierdzeń podziałowych.
+Okazało się iż gros twierdzeń podziałowych pozwala nam na zdefiniowanie
+odpowiadającego mu ideału. Kluczową rolą danego twierdzenia
+kombinatorycznego przy ,,konstrukcji'' odpowiadającego mu ideału
+jest wykazanie że jest on zamknięty na sumy.
+Ta ogólna technika konstrukcji odpowiednich ideałów została
+zresztą wykazana na przypadek dowolnych twierdzeń podziałwoch,
+jest to tak zwana teoria operacji regularnych podziałowo
+(``Partition regular operations'')
+wprowadzona i rozwinięta w pracy \cite{FilipowKowitzKwela2026}.
+
+W promoce matematycznych dziejów ginie kto po raz pierwszy
+użył pojęcia ,,ideał van der Waerdena'' - przypuszczałnie
+była to Jana Fla{\v{s}}kov\'a w roku 2010, niewykluczone że
+też M.Kojman.
+
+Następne ,,podziałowe'' ideały zaczęły wyrastać jak przysłowiowe
+grzyby po deszczu. A zatem mamy i ideał Hindmana (
+
+
+  Pierwszym takim ideałem był tak zwany ideał van der Waerdena,
+przy którego definicji 
+
+\section{Rozdział 2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                         %
+%                      Main part                                          %
+%                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{definition}
+  Dla zbioru $D \subseteq \nnatural$
+  definiujemy
+  \[
+FS(D) = \Big\lbrace \sum_{a\in A} a \colon A \in [D]^{<\omega} \Big\rbrace
+\]
+\end{definition}
+czyli $FS(D)$ jest to zbiór wszystkich skończonych sum
+różnych elementów zbioru $D$.
+
+Przyład 4.3 \todo{są OK, niech zostaną tak jak są}
+
+\begin{definition}
+  Rodzinę podzbiorów zbioru liczb naturalnych
+  zdefiniowaną przez
+  \[
+    H = \lbrace A \subseteq \nnatural \colon \forall_{D \in
+[\nnatural]^{\omega}}
+      FS(D) \not\subseteq A \rbrace
+    \]
+    Nazywamy {\it ideałem Hindmana}.
+\end{definition}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                        The Bibliography                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{filecontents*}{n_hindmany.bib}
+@article{FilipowKowitzKwela2026,
+  author  = {Filip{\'o}w, R. and Kowitz, K. and Kwela, A.},
+  title   = {A Unified Approach to Hindman, Ramsey and van der Waerden Spaces},
+  journal = {Journal of Symbolic Logic},
+  volume   = {91},
+  number   = {1},
+  pages    = {420--472},
+  year     = {2026}
+}
+\end{filecontents*}
+
+\printbibliography
+
+\end{document}
