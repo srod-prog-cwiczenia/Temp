@@ -58,7 +58,7 @@
 \usepackage{ulem}
 
 %%% to pozwala kontrolować overfulle, są one zaznaczane na marginesie czarną beleczką (o zadanym rozmiarze):
-\overfullrule=5pt 
+%\overfullrule=5pt 
 
 %---------------------------------------------------------------------
 % Theorems 
@@ -283,16 +283,16 @@ Ideały n-Hindmana.
 \section{Preliminaria}
 
   W niezwykle dziś rozbudowanej i burzliwie się
-rozwijąjącej teorii ideałów podzbiorów liczb naturalnych
+rozwijającej teorii ideałów podzbiorów liczb naturalnych
 niebagatelną rolę odgrywają w niej tak zwane ideały podziałowe.
 Są to ideały których geneza definicji bierze swój początek
 od specyficznych twierdzeń kombinatorycznych, tak zwanych twierdzeń podziałowych.
-  Okazało się iż lwia część twierdzeń podziałowych pozwala nam na zdefiniowanie
-odpowiadającego im ideału. Kluczową rolą danego twierdzenia
+  Okazało się iż lwia część wspomnianych twierdzeń podziałowych pozwala nam na zdefiniowanie
+stowarzyszonego z tym twierdzeniem ideału. Kluczową rolą danego twierdzenia
 kombinatorycznego przy ,,konstrukcji'' odpowiadającego mu ideału
 jest wykazanie że jest on zamknięty na sumy.
 Ta ogólna technika konstrukcji odpowiednich ideałów została
-zresztą wykazana na przypadek dowolnych twierdzeń podziałwoch,
+zresztą zaimplementowana na przypadek dowolnych twierdzeń podziałowych,
 jest to tak zwana teoria operacji regularnych podziałowo
 (``Partition regular operations'')
 wprowadzona i rozwinięta w pracy \cite{FilipowKowitzKwela2026}.
@@ -305,7 +305,7 @@ przy którego definicji użyto twierdzenia van der Waerdena z 1927 roku.
   W promoce matematycznych dziejów ginie kto po raz pierwszy
 użył pojęcia ,,ideał van der Waerdena'' - przypuszczalnie
 była to Jana Fla{\v{s}}kov\'a w roku 2010, niewykluczone że
-był to też M.Kojman.
+był to także i M.Kojman.
 
 Następne ,,podziałowe'' ideały zaczęły wyrastać jak przysłowiowe
 grzyby po deszczu. A zatem mamy i ideał Hindmana (który zostanie opisany
@@ -314,13 +314,15 @@ mniej znany ideał Gallai (związany z twierdzeniem podziałowym Gallai, które
 jest uogólnieniem twierdzenia van der Waerdena).
 
 Dziełem ostatnich lat jest pojęcie ideału n-Hindmana.
-\todo{Cytowanie}
+(\cite{MazurkiewiczZeberski2026}, strona 9, Definicja 9 i poniżej)
 Jednak, co interesujące, do wykazania poprawności tej definicji
 (czyli że owa rodzina jest zamknięta na skończone sumy)
-nie jest nieodzowne, wbrew nazwie tych idealów, twierdzenie
-Hindmana, ale wystarczy klasyczne twierdzenie Ramseya.
+nie jest nieodzowne, wbrew nazwie tych ideałów, twierdzenie
+Hindmana, ale wystarczy klasyczne twierdzenie Ramseya
+(\cite{MazurkiewiczZeberski2026}, Fact 2.3).
+Jest to ciekawy wyjątek i, ponieważ wykorzystujemy tu twierdzenie Ramseya,
+dlatego dowód ten zostanie w tym rozdziale zaprezentowany.
 
-  
 
 \section{Rozdział 2}
 
@@ -339,7 +341,7 @@ FS(D) = \Big\lbrace \sum_{a\in A} a \colon A \in [D]^{<\omega} \Big\rbrace
 czyli $FS(D)$ jest to zbiór wszystkich skończonych sum
 różnych elementów zbioru $D$.
 
-Przyład 4.3 \todo{są OK, niech zostaną tak jak są}
+{\tt Przyłady 4.3 są OK, niech zostaną w tej formie w jakiej są.}
 
 \begin{definition}
   Rodzinę podzbiorów zbioru liczb naturalnych
@@ -349,11 +351,71 @@ Przyład 4.3 \todo{są OK, niech zostaną tak jak są}
 [\nnatural]^{\omega}}
       FS(D) \not\subseteq A \rbrace
     \]
-    Nazywamy {\it ideałem Hindmana}.
+    Nazywamy {\it ideałem Hindmana} i oznaczamy przez $\idealHindmana$.
 \end{definition}
 
+{\tt Potem idzie Twierdzenie 4.5 (Hindmana), które POZOSTAWIAMY w tej samej
+  formie w jakiej jest w pracy, bez zmian, ale dalej pod nim
+wstawiamy taki tekst:}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Okazuje się że aby wykazać że zdefiniowana w Definicji 4.4 rodzina zbiorów
+jest istotnie zamknięta na sumy nie wystarczy skorzystać z Twierdzenia 4.5 w tej
+klasycznej formie ale nieodzowne jest jeszcze jego silniejsze obostrzenie, mianowicie:
+
+\begin{theorem}(Hindmana, wersja silniejsza):
+  Jeśli $A \subseteq \nnatural$ jest nieskończonym zbiorem i
+  pokolorujemy elementy zbioru $FS(A)$ skończoną liczbą kolorów
+  to istnieje nieskończony zbiór $D \subseteq \nnatural$
+  taki że $FS(D) \subseteq FS(A)$ oraz zbiór $FS(D)$ jest monochromatyczny.
+\end{theorem}
+
+{\bf \tt Zamiast: ,,Aby opisać silniejszą wersję (...)'' (str 20, wiersz 8 od dołu)
+  proponuję taki opis:}
+Zdefiniujemy teraz nowe ideały, tak zwane ideały n-Hindmana,
+po raz pierwszy wprowadzone i rozważane w pracy
+\cite{MazurkiewiczZeberski2026}. Przedtem wprowadźmy dodatkowe oznaczenia:
+
+{\bf \tt Definicja 4.6 jest OK}
+{\bf \tt Przykład 4.7 - pierwszy jest OK, w drugim 
+  proponuję tak:}
+  $FS_3(\lbrace 1,4, n \colon n \geq 10\rbrace) = \lbrace 15 + n \colon n \geq 0\rbrace$.
+{\bf \tt I dalej co następuje:}
+  \begin{definition}
+  Rodzinę podzbiorów zbioru liczb naturalnych
+  zdefiniowaną przez
+  \[
+    H = \lbrace A \subseteq \nnatural \colon \forall_{D \in
+[\nnatural]^{\omega}}
+      FS_k(D) \not\subseteq A \rbrace
+    \]
+    Nazywamy {\it ideałem k-Hindmana} i oznaczamy przez $\idealHindmana_k$.
+  \end{definition}
+  Mamy:
+  \begin{theorem}
+    Dla każdego $k \in \nnatural$ rodzina
+    $\idealHindmana_k$ jest zamknięta na sumy, to znaczy że:
+    \[A,B \in \idealHindmana_k \implies A \cup B \in \idealHindmana_k.\]
+    
+  \end{theorem}
+  \begin{proof}
+    Niech $A, B \in \idealHindmana_k$ i przypuśćmy niewprost że istnieje
+    nieskończony zbiór $D \subseteq \nnatural$ taki że
+    $FS_k(D) \subseteq A \cup B$.
+    {\bf \tt A dalsza część niech zostanie bez zmian,
+      czyli od słowa: Kolorujemy (...) aż do ,,jednorodny względem tego kolorowania. Ale dalej zamieniamy na:}
+    Jeżeli $[D^*]^k$ jest niebieski to
+    \[FS_k(D^*) \subseteq A,\]
+    sprzeczność, bo $A \in \idealHindmana_k$,
+    
+    a jeżeli $[D^*]^k$ jest czerwony to
+    \[FS_k(D^*) \subseteq B,\]
+    i też sprzeczność, bo $B \in \idealHindmana_k$,
+    a więc $A \cup B \in \idealHindmana_k$.
+   \end{proof}
+   {\bf \tt Dodałbym jeszcze zaraz po ,,na mocy twierdzenia Ramseya'' (w tym dowodzie)
+     bliższe oznaczenie z jakiej wersji korzystamy, mianowicie w nawiasie zaraz po
+     tym ,,na mocy twierdzenia Ramseya''  : } ($\aleph_0 \to (\aleph_0)^k_2$).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %                        The Bibliography                                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -366,6 +428,16 @@ Przyład 4.3 \todo{są OK, niech zostaną tak jak są}
   number   = {1},
   pages    = {420--472},
   year     = {2026}
+}
+@article {MazurkiewiczZeberski2026,
+    AUTHOR = {Mazurkiewicz, \L. and \.Zeberski, S.},
+     TITLE = {Ideal analytic sets},
+   JOURNAL = {MLQ Math. Log. Q.},
+  FJOURNAL = {MLQ. Mathematical Logic Quarterly},
+    VOLUME = {72},
+      YEAR = {2026},
+    NUMBER = {1},
+     PAGES = {Paper No. e70012, 11},
 }
 \end{filecontents*}
 
