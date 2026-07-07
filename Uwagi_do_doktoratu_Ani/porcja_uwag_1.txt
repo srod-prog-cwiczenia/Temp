@@ -1,0 +1,41 @@
+* W Obserwacji 1.14 można 
+zaznaczyć że jest to suma wstępującego ciągu zbiorów,
+czyli dodać uwagę postaci: ,,Warto zaznaczyć że ciąg zbiorów
+(Thick^+_N) jest wstępującym ciągiem zbiorów".
+Myślałem też o sumie w postaci cup i strzałeczka w górę
+na prawym ,,wąsie'' sumy, ale chyba w LaTeX takiego symbolu nie ma,
+w każdym razie tak mi powiedział ChatGPT ale wiadomo że to kłamca szczelny :-).
+
+* A może przydałoby się (może właśnie w Obserwacji 1.14? bo tego
+tam używamy) wyjaśnić explicite że przez pojęcie ,,przedział całkowitoliczbowy''
+rozumiemy zbiór {n, ..., n + m}) ?
+
+* Tuż pod definicją 1.20 może warto napisać uwagę że
+istnieje inna definicja (charakteryzacja?) ideału I_d
+dana przez :
+\[
+  I_d = \{ A \subseteq \omega \colon
+  \lim_{n\to\infty} \frac{|A \cap [2^n, 2^{n+1})|}{2^n} = 0 \}.
+\]
+
+Nie wiem czy to będziesz gdzieś dalej wykorzystywać ale nawet jeśli nie
+to warto tę charakteryzację podać?
+
+* W linijce 9 od dołu na stronie 12 jest:
+,,Zauważmy również, że I_d \not\subseteq Thick^+. Istotnie (...)"
+I dalej wspomniałaś że ten przykład jest w Thick^+ a nie jest
+w I_d, wszystko to prawda, ale to dowodzi raczej że
+Thick^+ \not\subseteq I_d.
+Aby dowieść tego co napisano po ,,Zauważmy'' można
+zdefiniować np zbiór
+\[
+\bigcup_{n=1}^\infty \{10^n, \ldots, 10^n + n\}.
+\]
+
+* na stronie 13 linijka 2 od góry, zamiast
+Thick^* \Cup Thick^*_N \not= \cantor
+proponuję raczej:
+\omega \not\in Thick^* \Cup Thick^*_N
+(coś jest tam nie tak - z tego że każdy składnik sumy mnogościowej jest różny on
+całej przestrzeni nie wynika że suma też jest. Jak zmienimy to jak proponuję
+to chyba będzie OK?).
