@@ -38,3 +38,4 @@ bo chyba wcześniej nie zostały one nigdzie zdefiniowane.
 
 *Została jeszcze do przeanalizowania z rodziału 2 strona 19
 ale to zrobię już w kolejnej transzy :-).
+OK, sprawdziłem i stronę 19 (ostatnią rozdziału 2), jest OK, moje wątpliwości były nieuzasadnione.
