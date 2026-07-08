@@ -1,0 +1,40 @@
+* ,,Czy w ogóle dowód wniosku wpisywać'' (str 14, pierwszy ,,dymek''):
+Jeśli chodzi o ten oddzielony podkreśleniem to TAK.
+
+* ,,Czy pisać że te rodziny(..) (str 14 dalszy ,,dymek'')
+Chyba tak jak jest jest OK.
+
+* Na stronie 16 w dowodzie implikacji 3) => 1)
+(linijka 5 od góry) chochlik trochę namieszał (chyba?).
+Bo tak: Skoro dowodzimy punktu 1) to dowodzimy że
+Z jest w Perm(F^*). A to oznacza że zaprzeczenie
+tego warunku ma postać:
+,,Istnieje A \in F^* takie że A \cup Z \not \in F^*.
+Tymczasem w linijce 6 od góry mamy że Z \cup A \not\in F^*.
+Proponuję więc odpowiednie zdanie podmienić na (zmieniają
+się lekko tylko wzory):
+
+Przypuśćmy nie wprost, że istnieje $A \in \calF^*$
+takie, że $Z \cup A \not\in \calF^*$.
+Wówczas $Z^c \cap A^c \not\in \calF$, a więc
+$Z^c \cap A^c \in \calF^+$. Z założenia
+$(Z^c \cap A^c) \cup Z \in \calF^+$,
+jednak $(Z^c \cap A^c) \cup Z = A^c \cup Z$, zatem
+$A^c \cup Z \not\in\calF$.
+
+* strona 17 ,,dymek'' zaraz od góry - tak, zdecydowanie
+albo trzeba wpleść definicję różnicy symetrycznej tu,
+albo ewentualnie we wstępie do dysertacji (w oznaczeniach).
+Można np. zaraz w punkcie 1) Twierdzenia 2.17 dodać:
+,,gdzie $\Delta$ oznacza różnicę symetryczną zbiorów, przy czym
+gdy argumentami $\Delta$ są nieskończone ciągi binarne
+to utożsamiamy taki ciąg z przeciwobrazem \{1\}.
+
+*strona 18, linijka 16 od dołu - tam używamy
+prawiekwantyfikatorów, czyli
+$\forall^\infty$, $\exists^\infty$, przydałoby się
+(najlepiej w oznaczeniach zaraz we wstępie) je zdefioniwać,
+bo chyba wcześniej nie zostały one nigdzie zdefiniowane.
+
+*Została jeszcze do przeanalizowania z rodziału 2 strona 19
+ale to zrobię już w kolejnej transzy :-).
