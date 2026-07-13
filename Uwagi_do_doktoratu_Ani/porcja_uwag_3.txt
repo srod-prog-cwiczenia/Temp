@@ -1,0 +1,38 @@
+* na stronie 29 jest taki fragment (wiersz 11 od dołu):
+,,(...)(w skrócie MB-reprezentowalny), jeżeli istnieje
+rodzina F taka że I = S^0(F) (...)"
+Może warto dodać że ,,Zwykle wymagamy też aby rodzina F była
+odpowiednio <<regularna>>, czyli jej elementy mają być wybrane
+z pewnej klasy punktowej."
+
+
+* strona 31 pierwszy ,,dymek'' - ,,raczej(..)"
+- jest OK;
+
+* strona 31 drugi ,,dymekk' (,,może(...)")
+- też jest OK, jest to czytelne, dość zwięzłe
+ale czytelne i poprawne. Proponuję nie zmieniać, tylko nanieść
+tę drobną poprawkę:
+
+* strona 31, linijka 14 od dołu: ,,Jeśli S \ N subseteq Z, gdzie S (...)"
+i raptem to zdanie się urywa. Proponuję zamiast kończącej to zdanie kropki
+połączyć to spójnikiem ,,to'' z następną frazą.
+
+* Przykład 4.13, linijka 16 od dołu: ,,Rozważmy najpierw funkcję {(1,2), (2,1)}."
+Potem rozważamy funkcję {(1,1), (2,2)}. Ale brak rozważenia
+funkcji postaci {(1,1), (2,1)} i {(1,2), (2,2)} (czyli stałych).
+
+* Stronica 34, wiersz 7 od dołu, czyli wyeksponowany
+wzór postaci ,,A \cap B = [...".
+Wydaje mi się że zamiast:
+
+  A \cap B = [(Z \setminus B) \cup Z] \cap B =(...)
+
+winno być:
+
+  A \cap B = [(X \setminus B) \cup Z] \cap B =(...)
+
+ale sprawdź to pieczołowicie, proszę, bo mogę się mylić.
+
+==================================================
+PS: Analizę końcówki Rozdziału 2 przyślę w czwartej transzy już.
