@@ -1,0 +1,24 @@
+* Strona 22, drugi ,,dymek'' - tak jest, sprawdziłem w pracy
+Hrusak-Zindulka że istotnie mają oni taki lemat.
+
+* Strona 23, ,,dymek'' - tak jest, zgadzam się z modyfikacjami oznaczeń
+z tego ,,dymka''
+
+* Stronica 25, drugi ,,dymek'' od góry - rzeczywiście, wygląda
+na to że informacja o tym że zbiory E_n są domknięte (aczkolwiek
+oczywiście prawdziwa) nie jest nigdzie dalej wykorzystywana. TNIEMY! :-)
+
+* Stronica 38, wiersz 13 od góry:
+
+jest:
+,,$k \in A \cap [N, \infty)$, to mielibyśmy $N \leq k$, ale , więc mamy: ''
+
+ten tekst wygląda na urwany, lecz całe rozumowanie jest poprawne.
+Podejrzewam że po słowie ,,ale'' w powyższym zdaniu powinno być $k \in t$ ?
+
+* Stronica 37, wiersz 4 od góry:
+,,Następnie, aplikujemy (...)"
+określenie nietypowe, oczywiście można to zastąpić synonimicznym ,,stosujemy''
+ale niech tak ZOSTANIE bo nietypowe określenie nada trochę rumieńcow Twej dysertacji.
+
+
