@@ -1,0 +1,25 @@
+1. Czy umieścić w dysertacji diagram AWZ (to jest diagram
+na stronie 10 w pliku micro)? Raczej skłaniamy się
+na NIE a to dlatego że nieodzowne byłoby wtedy
+podefiniowanie ideałów (a) i rodzin (a') które
+są ,,trzonem'' tego diagramu. To akurat trudne
+nie jest bo np. jest charakteryzacja że dla dwóch topologii
+t_1 i silniejszej t_2 zbiory (a) to po prostu 
+przekrój rodzin ND(t), dla wszystkich t pomiędzy t_1 i t_2.
+No a klasyczne (a) to przypadek topologii : standardowej i silniejszej gęstości.
+Jednak dysertacja jest już duża, więc...
+
+2. Czy umieścić w rozdziale 6 krótkie wprowadzenie
+do teorii gier nieskończonych (chodzi o takie
+pojęcia jak strategia, gra zdeterminowana, etc.).
+To pytanie w aspekcie faktu że dla microscopic
+wykorzystujemy pewną grę w dowodach.
+
+3. Czy cytowania powinny dotyczyć tylko tych prac
+które są wykorzystywane w sposób konkretny
+(konkretna definicja, twierdzenie) czy również
+tych ,,ogólnych''?
+
+4. Czy rozdział 6 wypada :-) nazwać jako ,,Nieopublikowane notatki"?
+
+
