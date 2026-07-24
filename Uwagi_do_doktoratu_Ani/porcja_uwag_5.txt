@@ -1,0 +1,56 @@
+* ,,dymek'' nr 1 od góry na stronie 46: Tak, niech to będzie twierdzenie a nie
+  przykład;
+
+* ,,dymek' nr 2 od góry na stronie 46 - tego nie rozumiem, na czym polegała
+wspomniana luka dotycząca zbioru pustego w tym rozumowaniu?
+
+* Strona 46, wiersz 5 i wiersz 8 od dołu, tam pojawia się
+wyrażenie [n^2, n^2 + n], wszystko jest OK, ale miałem
+chwilę ,,zawieszenia'' bo zastanawiałem się dlaczego
+dobrano tam akurat takie dość spektakularne wyrażenie
+n^2 + n. Dopiero potem zajarzyłem że 
+to wynika z faktu iż gdy n < m to [n^2, n^2 + n]
+jest rozłączny z [m^2, m^2 + m]. Wydaje mi się
+że nie warto o tym pisać, ale trzeba to pamiętać
+że w razie ustnego pytania warto przytoczyć takie
+uzasadnienie owej formuły.
+
+* Strona 47, ,,dymek'' pierwszy od góry - OK, tak zmodyfikowane
+rozumowanie jest w porządku;
+
+* Strona 47, ,,dymek'' nr 2 od góry - Nie rozumiem, tak na oko
+to wszystko stylistycznie jest OK, proszę o szczegóły?
+
+* Strona 47 ,,dymek'' na dole - OK, to był pleonazm,
+wywalamy fragment ,,dla $x \in E_0$''
+
+* Strona 48, ,,dymek'' pierwszy od góry - zgoda, tamte k to oczywiście n;
+
+* Strona 48, ,,dymek'' na dole - ok, niech będzie taka dziedzina, przy czym
+to nadal jest G_delta (bo I \setminus Q jest zbiorem typu G_delta) więc jest
+  OK.
+
+* Strona 49, ,,dymek'' pierwszy od góry - tak, 
+nieodzowna ta poprawka;
+
+* Strona 49, drugi ,,dymek'' od dołu - OK, to wynika
+z Twierdzenia Baire'a, a w zasadzie z tego że odpowiednia
+przestrzeń jest przestrzenią Baire'a (z samej jej definicji)
+
+* Strona 49, ostatni na dole ,,dymek'' - można ewentualnie zdefiniować
+pojęcie zbioru $<\epsilon$-gęstego (czasem nazywa się to 
+w topologii $\epsilon$-sieć, np tu:
+https://mathoverflow.net/questions/24402/quantitative-questions-about-the-size-of-a-finite-epsilon-net
+dobra - mathoverflow to nie jest dobre miejsce dla cytowania definicji ale
+tu akurat dobrze to ktoś wyjaśnił :-) )
+
+* Strona 49, linijka 4 od dołu - coś niby brakuje
+w sformułowaniu postaci : Ponieważ (...) oraz (...), otrzymujemy (...).
+Może tak ?:
+ Ponieważ (...) oraz (...), więc otrzymujemy że (...).
+
+* Strona 50, jedyny tam ,,dymek'' - OK, nie trzeba tam metryki;
+
+Wygląda na to że od strony 51 jest już wszystko perfect ,,przeryte''
+nie mam tam uwag (i zresztą nie ma tam żadnego ,,dymka'').
+
