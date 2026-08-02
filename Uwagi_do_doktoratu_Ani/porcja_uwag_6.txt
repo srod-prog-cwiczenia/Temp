@@ -1,0 +1,62 @@
+Uwaga - wszystkie numeracje stron dotyczą wersji
+z commita o kodzie 457315face9f0647301e4a63d3fb71f912854c1d
+
+Strona 57, ,,dymek'' zaczynający się od słów: ,,No właśnie...''.
+Dobre pytanie, bo przecież ran(sigma obcięte do Cantor bez Prawie1) to [0,1).
+Myślę że można podmienić na (0,1), bo skoro piszemy w definicji P_{(0,1)} otwarte...
+
+Strona 57 - ,,dymek'' w poprzedniej wersji dysertacji zaczynający
+się od słów: ,,rosnąca czy niemalejąca'' - sądzę że słabsza wersja, niemalejąca
+też będzie funkcjonować. Jednak w pracy Czworga Autorów [CKMW] wyraźnie
+zaznaczają że funkcje f_n mają być "increasing" (powołując się notabene
+na pracę Grażyny Horbaczewskiej w której jak sprawdziłem też jest
+założenie że f_n są increasing). Podsumowując - sądzę że osłabienie
+do wersji "non-decreasing" dalej by funkcjonowało to jednak proponuję
+zostać przy wersji ,,rosnącą'' aby być w zgodzie z poprzednimi pracami.
+
+Strona 58, ,,dymek'' pierwszy od góry - tak, warunki są OK;
+Strona 58, ,,dymek'' drugi od góry - tak, definicja na Cantorze ma sens;
+Strona 58, ,,dymek'' trzeci od góry - ok, dowód jest OK;
+Strona 58, ,,dymek'' pierwszy od dołu - moim zdaniem może to być jako twierdzenie
+(Tw 6.6);
+
+Strona 59 - pierwszy i drugi ,,dymek'' - faktycznie powinna być tam nierówność, pełna zgoda!;
+
+Strona 61 - ,,dymek'' - tak , dowód jest poprawny i dobrze zredagowany;
+
+Strona 62 - pierwszy ,,dymek'' od góry - formuła na k wydaje się być w porządku,
+a jak było w micro?
+Strona 62 - drugi i trzeci ,,dymek'' - oba dowody są w porządku;
+
+Strona 64 - pierwszy ,,dymek'' - tak, słusznie, weźmy tu wnętrze;
+Strona 64 - ,,dymek'' od dołu - tak, bierzemy długość, tym bardziej więc ogranicza
+to promień;
+
+Strona 65 linijka 10 od góry -
+,,Ponieważ (...), mamy (....), skąd wynika punkt 2)."
+Wydawało mi się że że warto dodać łącznik, czyli np zmienić to ot tak:
+,,Ponieważ (...), więc mamy (....), skąd wynika punkt 2)."
+ale ponieważ Chat podpowiedział że to byłby pleonazm ( :-) ), więc :-) ;-)
+zostawiamy to tak jak napisałas (ooops, chyba zrobiłem ten błąd tutaj :-) ).
+
+Strona 66, linijka 13 od góry - jest: ,,warunek ??" przypuszczalnie brak
+dubeltowej kompilacji, chodiz zapewne o Def. 3.7?
+
+Strona 66 i Twierdzenie 6.21, P_kl itd, ALE
+zauważyłem że w nowej wersji jest już podmienione
+na P_u. Do tego jeszcze jest podmienione (słusznie)
+MaxLen na lambda.
+
+
+Strona 67 - gdzie w nowej wersji podział się rozdział ,,Funkcja peak i funkcja eta",
+czy ,,wyleciał''?
+
+Widzę ze od strony 66 cała reszta jest mocno przeredagowana, więc
+chyba muszę jeszcze raz wydrukować :).
+
+
+
+
+
+
+
