@@ -1,0 +1,99 @@
+\documentclass[12pt]{amsart}
+\usepackage{amssymb} % this package is indispensable, among other things, for rendering the \varsubsetneq command
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+%\usepackage[mathscr]{eucal}
+\usepackage[mathscr]{euscript}
+\usepackage{eqlist}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem} % this allows us to create enumerate environments with different item numbering schemes
+\usepackage{hyperref} % this allows us to create links in the text
+%%%%%%%%%%%%%%% Polish letter packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{t1enc}
+%%% package for generating gibberish (placeholder text):
+\usepackage{lipsum}
+%%% package for adding fictitious notes `a la ``todo''
+\usepackage{todonotes}
+% This package is supposedly intended, among other things, to allow
+% line breaks in table cells and in the table ``header''
+% (table environment)
+\usepackage{makecell}
+% this package is used for elegant formatting of listings (programs? but presumably not only programs)
+\usepackage{listings}
+% this package is used, among other things, to check whether the appropriate bibliography entries
+% are actually cited in the body of the file. Presumably, it should
+% be run only when checking the file; in the official version it should be disabled.
+\usepackage{refcheck}
+% package included for the time being so that we can create ``monstrous'' bigforall and bigexists quantifiers
+\usepackage{graphicx}
+% the rotating package is used for rotating objects such as text, tables, images, graphs, etc.
+\usepackage{rotating}
+% package for conveniently creating multi-row tables.
+\usepackage{multirow}
+% the first package makes it possible to use calligraphic fonts,
+% whereas I have no idea what the purpose of the second package is,
+% but it is certainly related to the first one.
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+\newcommand{\countableEllentuckPerfect}{\mathrm{Count-Ell-Perf}}
+\newcommand{\fcInItselfEllentuckPerfect}{\mathrm{FC-in-itself-Ell-Perf}}
+\newcommand{\separableEllentuckPerfect}{\mathrm{Sep-Ell-Perf}}
+
+\begin{document}
+In the Ellentuck topology, we distinguish the following:
+\begin{enumerate}
+\item
+A countable Ellentuck perfect set ($\countableEllentuckPerfect$)
+\item
+An Ellentuck perfect subset that is first category in itself
+($\fcInItselfEllentuckPerfect$)
+\item
+An Ellentuck perfect separable (i.e. having a dense countable set) subset ($\separableEllentuckPerfect$).
+\end{enumerate}
+
+Obviously 
+  $\countableEllentuckPerfect \implies \fcInItselfEllentuckPerfect$
+and
+  $\countableEllentuckPerfect \implies \separableEllentuckPerfect$
+but there is no relationship between
+$\fcInItselfEllentuckPerfect$ and $\separableEllentuckPerfect$
+
+I do not know whether we explicitly wrote this in our paper on the dichotomy,
+but the fact that the Ellentuck topology contains the Sorgenfrey line
+as a perfect subset implies a counterexample to your
+question from your first basic article.
+I could not find it anywhere.
+
+The two major results from your article:
+\begin{itemize}
+\item
+  Every Ellentuck dense subset of $[\omega]^\omega$ contains
+a set from $\countableEllentuckPerfect$;
+\item
+  Every Ellentuck dense subset of any $P \in \fcInItselfEllentuckPerfect$
+contains a set from $\countableEllentuckPerfect$.
+\end{itemize}
+
+The question was:
+Is the assumption that $P$ is first category in itself necessary?
+
+The answer is YES, and an example can be constructed using the fact that the
+Ellentuck space contains the Sorgenfrey line.
+
+Thats because:
+
+Wiemy że topologia Ellentucka zawiera 
+Sorgenfrey line jako swój podzbiór doskonały.
+O linii Sorgenfreya można dowieść taki lemat
+(dowód jest bardzo łatwy):
+{\bf Theorem: }\\
+If $P \subseteq (0,1]$ is a Sorgenfrey perfect set, then
+the euclidean closure $\mathit{cl}(P)$ is a classical perfect
+set and $\mathit{cl}(P) \setminus P$ is a countable set.
+\end{document}
