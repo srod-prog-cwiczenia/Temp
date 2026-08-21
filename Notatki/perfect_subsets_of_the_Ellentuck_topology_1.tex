@@ -127,18 +127,37 @@ You know, one of the drawbacks of our paper on the dichotomy
 is that we do not say explicitly that something is Ellentuck-whatever, i.e. that we omit the word
 ``Ellentuck'', so we write ``perfect'' instead of ``Ellentuck perfect'', etc.etc.
 
-From the Sierpiński characterization of the rational numbers space
+From the Sierpiński characterization of the space of rational numbers
 we infer that any set from 
-$\countableEllentuckPerfect$ is homeomorfic to the rational number space.
+$\countableEllentuckPerfect$ is homeomorphic to the space of rational numbers.
 
 Hence, all sets in $\countableEllentuckPerfect$ are mutually homeomorphic.
-But, here are some questions:
+But here are some questions:
 
 \begin{enumerate}
 \item
-  Is it true that the Ellentuck space is homogeneous. Recall that
+  Is it true that the Ellentuck space is homogeneous? Recall that
   a topological space $X$ is homogeneous iff
-  $\forall_{x,y\in X}$ there exists an automorphism $h \colon X \to X$
+  For all ${x,y\in X}$ there exists an automorphism $h \colon X \to X$
+  such that $h(x) = y$.
+
+  We know that if we take any $A, B \in [\omega]^\omega$
+  such that $|\omega\setminus A| = |\omega\setminus B| = \aleph_0$
+  then there exists such an automorphism. Namely,
+  consider a permutation $\sigma\colon\omega\to\omega$
+  such that $\sigma[A] = B$ and then ``extend''
+  it to the Ellentuck space (by the standard formula $h[Z] = \sigma[Z]$.
+  Then $h$ works.
+  But I don't know anything about the points $(1,1,1,1,1,\ldots)$
+  and $(1,0,1,0,1,0,\ldots)$.
+
+\item
+  We know, for example, that for any two dense countable subsets $D_1, D_2$ of
+  the Cantor space $2^\omega$ there exists an automorphism
+  $h\colon 2^\omega \to 2^\omega$ such that $h[D_1] = D_2$.
+  Of course we don't have any countable dense subset of the Ellentuck space.
+  But is it true that for each $P, Q \in \countableEllentuckPerfect$
+  there exists an automorphism $h \colon [\omega]^\omega \to [\omega]^\omega$
   such that $h[P] = Q$?
 
 \end{enumerate}
